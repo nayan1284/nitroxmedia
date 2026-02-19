@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Nitrox Booking Interface v1</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style type="text/tailwindcss">
+        @layer utilities {
+            .glass-panel {
+                @apply bg-black/40 backdrop-blur-[24px] border border-white/10;
+                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+            }
+            .glass-card-glow {
+                position: relative;
+            }
+            .glass-card-glow::before {
+                content: "";
+                position: absolute;
+                inset: -1px;
+                border-radius: inherit;
+                padding: 1px;
+                background: linear-gradient(135deg, #0ea5ff, #7c3aed);
+                -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+                -webkit-mask-composite: xor;
+                mask-composite: exclude;
+                pointer-events: none;
+                opacity: 0.6;
+            }
+            .bg-glow-corner {
+                background: radial-gradient(circle at top left, rgba(124, 58, 237, 0.15), transparent 40%),
+                            radial-gradient(circle at bottom right, rgba(14, 165, 255, 0.15), transparent 40%);
+            }
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #000000;
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: rgba(255,255,255,0.02);
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background-color: rgba(255,255,255,0.1);
+            border-radius: 20px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+            background-color: rgba(255,255,255,0.2);
+        }
+    </style>
+<script>
+        tailwind.config = {
+            darkMode: "class", // Force dark mode logic primarily
+            theme: {
+                extend: {
+                    colors: {
+                        "nitrox-black": "#050505",
+                        "nitrox-glass": "rgba(20, 20, 20, 0.6)",
+                        "nitrox-border": "rgba(255, 255, 255, 0.08)",
+                        "accent-blue": "#0ea5ff", 
+                        "accent-purple": "#7c3aed",
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+<body class="min-h-screen flex flex-col items-center justify-center p-4 antialiased text-white relative overflow-x-hidden selection:bg-accent-blue selection:text-white">
+<div class="fixed inset-0 pointer-events-none z-0 bg-black"></div>
+<div class="fixed inset-0 pointer-events-none z-0 bg-glow-corner"></div>
+<div class="fixed top-[-20%] left-[20%] w-[600px] h-[600px] bg-accent-purple/10 rounded-full blur-[120px] pointer-events-none"></div>
+<div class="fixed bottom-[-20%] right-[10%] w-[500px] h-[500px] bg-accent-blue/10 rounded-full blur-[120px] pointer-events-none"></div>
+<div class="relative z-10 w-full max-w-5xl flex flex-col items-center animate-fade-in-up">
+<div class="text-center mb-10 space-y-3">
+<h2 class="text-[10px] font-semibold tracking-[0.3em] text-white/40 uppercase">Work With Us</h2>
+<h1 class="text-3xl md:text-5xl font-light text-white leading-tight tracking-tight">
+                Let's Level Up<br/>
+<span class="font-medium text-transparent bg-clip-text bg-gradient-to-r from-white via-white to-white/50">Your Business!</span>
+</h1>
+</div>
+<div class="w-full glass-panel glass-card-glow rounded-2xl flex flex-col md:flex-row overflow-hidden relative">
+<div class="w-full md:w-[32%] p-8 border-b md:border-b-0 md:border-r border-white/5 bg-black/20">
+<div class="flex flex-col h-full">
+<div class="mb-5 relative">
+<div class="absolute -inset-1 bg-gradient-to-r from-accent-blue to-accent-purple rounded-full blur opacity-30"></div>
+<img alt="Neel Nafis" class="relative w-16 h-16 rounded-full border border-white/10 object-cover shadow-2xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBV6ZWRHzLsEjm97xgyuXB0rXM4pasgiHUuCU6eaPHGQpvK7ssJalUjhaBCmA7yoVjGBZcEu1bzon2klYLCo_ZrOUj8Ek_-8fAQiRjsIm0F5oa6VEvtLmVqgS2_RVdwtGiHdFKo4MkHyAdt9OGRKYjxeCjgBYtiCvniTiTFUO55GrE1jeWTDYrd0wmvenfRqMzJF6uGJ_-NEqyplJNoD2-I1oKkZjWb8g8CxuHSIHRtgmHk8WtDly1kCxTxuDeBbmqecrHKXC6riA9R"/>
+</div>
+<h3 class="text-white/40 font-light text-xs tracking-wide mb-1 uppercase">Host</h3>
+<h2 class="text-xl font-medium text-white mb-6 tracking-wide">Neel Nafis</h2>
+<h4 class="text-2xl font-semibold text-white mb-2 tracking-tight">Discovery Call</h4>
+<p class="text-white/50 text-sm font-light leading-relaxed mb-8">A brief introductory meeting to discuss your goals and how Nitrox Media can help accelerate your growth.</p>
+<div class="space-y-5 mt-auto">
+<div class="flex items-center text-white/70 group transition-colors hover:text-white">
+<span class="material-symbols-outlined text-[20px] mr-3 font-light text-white/40 group-hover:text-accent-blue transition-colors">schedule</span>
+<span class="text-sm font-light tracking-wide">30 min</span>
+</div>
+<div class="flex items-center text-white/70 group transition-colors hover:text-white">
+<span class="material-symbols-outlined text-[20px] mr-3 font-light text-white/40 group-hover:text-green-400 transition-colors">videocam</span>
+<span class="text-sm font-light tracking-wide">Google Meet</span>
+</div>
+<div class="flex items-center text-white/70 cursor-pointer hover:text-white transition-colors group">
+<span class="material-symbols-outlined text-[20px] mr-3 font-light text-white/40 group-hover:text-accent-purple transition-colors">public</span>
+<span class="text-sm font-light tracking-wide">Asia/Dhaka</span>
+</div>
+</div>
+</div>
+</div>
+<div class="w-full md:w-[40%] p-8 border-b md:border-b-0 md:border-r border-white/5 relative">
+<div class="flex items-center justify-between mb-8">
+<h3 class="text-white font-medium text-lg tracking-wide">February <span class="font-light text-white/40 ml-1">2026</span></h3>
+<div class="flex space-x-2">
+<button class="p-1.5 rounded-full hover:bg-white/10 text-white/60 hover:text-white transition-all duration-300">
+<span class="material-symbols-outlined text-lg">chevron_left</span>
+</button>
+<button class="p-1.5 rounded-full hover:bg-white/10 text-white/60 hover:text-white transition-all duration-300">
+<span class="material-symbols-outlined text-lg">chevron_right</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-7 gap-y-6 text-center text-[10px] font-semibold tracking-widest text-white/30 mb-4">
+<div>SUN</div>
+<div>MON</div>
+<div>TUE</div>
+<div>WED</div>
+<div>THU</div>
+<div>FRI</div>
+<div>SAT</div>
+</div>
+<div class="grid grid-cols-7 gap-1 text-sm">
+<div class="p-2"></div>
+<button class="w-9 h-9 mx-auto rounded-full text-white/40 hover:text-white hover:bg-white/5 flex items-center justify-center transition-all duration-300 font-light">1</button>
+<button class="w-9 h-9 mx-auto rounded-full text-white/40 hover:text-white hover:bg-white/5 flex items-center justify-center transition-all duration-300 font-light">2</button>
+<button class="w-9 h-9 mx-auto rounded-full text-white/40 hover:text-white hover:bg-white/5 flex items-center justify-center transition-all duration-300 font-light">3</button>
+<button class="w-9 h-9 mx-auto rounded-full text-white/40 hover:text-white hover:bg-white/5 flex items-center justify-center transition-all duration-300 font-light">4</button>
+<button class="w-9 h-9 mx-auto rounded-full text-white/40 hover:text-white hover:bg-white/5 flex items-center justify-center transition-all duration-300 font-light">5</button>
+<button class="w-9 h-9 mx-auto rounded-full text-white/40 hover:text-white hover:bg-white/5 flex items-center justify-center transition-all duration-300 font-light">6</button>
+<button class="w-9 h-9 mx-auto rounded-full text-white/40 hover:text-white hover:bg-white/5 flex items-center justify-center transition-all duration-300 font-light">7</button>
+<button class="w-9 h-9 mx-auto rounded-full text-white/40 hover:text-white hover:bg-white/5 flex items-center justify-center transition-all duration-300 font-light">8</button>
+<button class="w-9 h-9 mx-auto rounded-full text-white/40 hover:text-white hover:bg-white/5 flex items-center justify-center transition-all duration-300 font-light">9</button>
+<button class="w-9 h-9 mx-auto rounded-full text-white/40 hover:text-white hover:bg-white/5 flex items-center justify-center transition-all duration-300 font-light">10</button>
+<button class="w-9 h-9 mx-auto rounded-full text-white/40 hover:text-white hover:bg-white/5 flex items-center justify-center transition-all duration-300 font-light">11</button>
+<button class="w-9 h-9 mx-auto rounded-full text-white/40 hover:text-white hover:bg-white/5 flex items-center justify-center transition-all duration-300 font-light">12</button>
+<button class="w-9 h-9 mx-auto rounded-full text-white/40 hover:text-white hover:bg-white/5 flex items-center justify-center transition-all duration-300 font-light">13</button>
+<button class="relative w-9 h-9 mx-auto rounded-full bg-white text-black font-semibold flex flex-col items-center justify-center shadow-[0_0_15px_rgba(255,255,255,0.4)] transition-all">
+                        14
+                        <span class="absolute -bottom-1 w-1 h-1 bg-black rounded-full"></span>
+</button>
+<button class="w-9 h-9 mx-auto rounded-full bg-white/5 text-white font-medium hover:bg-white/10 hover:shadow-[0_0_10px_rgba(255,255,255,0.1)] flex items-center justify-center transition-all duration-300 border border-white/5">15</button>
+<button class="w-9 h-9 mx-auto rounded-full bg-white/5 text-white font-medium hover:bg-white/10 hover:shadow-[0_0_10px_rgba(255,255,255,0.1)] flex items-center justify-center transition-all duration-300 border border-white/5">16</button>
+<button class="w-9 h-9 mx-auto rounded-full bg-white/5 text-white font-medium hover:bg-white/10 hover:shadow-[0_0_10px_rgba(255,255,255,0.1)] flex items-center justify-center transition-all duration-300 border border-white/5">17</button>
+<button class="w-9 h-9 mx-auto rounded-full bg-white/5 text-white font-medium hover:bg-white/10 hover:shadow-[0_0_10px_rgba(255,255,255,0.1)] flex items-center justify-center transition-all duration-300 border border-white/5">18</button>
+<button class="w-9 h-9 mx-auto rounded-full bg-white/5 text-white font-medium hover:bg-white/10 hover:shadow-[0_0_10px_rgba(255,255,255,0.1)] flex items-center justify-center transition-all duration-300 border border-white/5">19</button>
+<button class="w-9 h-9 mx-auto rounded-full text-white/70 hover:text-white hover:bg-white/5 flex items-center justify-center transition-all duration-300 font-light">20</button>
+<button class="w-9 h-9 mx-auto rounded-full text-white/70 hover:text-white hover:bg-white/5 flex items-center justify-center transition-all duration-300 font-light">21</button>
+<button class="w-9 h-9 mx-auto rounded-full text-white/40 hover:text-white hover:bg-white/5 flex items-center justify-center transition-all duration-300 font-light">22</button>
+<button class="w-9 h-9 mx-auto rounded-full text-white/40 hover:text-white hover:bg-white/5 flex items-center justify-center transition-all duration-300 font-light">23</button>
+<button class="w-9 h-9 mx-auto rounded-full text-white/40 hover:text-white hover:bg-white/5 flex items-center justify-center transition-all duration-300 font-light">24</button>
+<button class="w-9 h-9 mx-auto rounded-full text-white/40 hover:text-white hover:bg-white/5 flex items-center justify-center transition-all duration-300 font-light">25</button>
+<button class="w-9 h-9 mx-auto rounded-full text-white/40 hover:text-white hover:bg-white/5 flex items-center justify-center transition-all duration-300 font-light">26</button>
+<button class="w-9 h-9 mx-auto rounded-full text-white/40 hover:text-white hover:bg-white/5 flex items-center justify-center transition-all duration-300 font-light">27</button>
+<button class="w-9 h-9 mx-auto rounded-full text-white/40 hover:text-white hover:bg-white/5 flex items-center justify-center transition-all duration-300 font-light">28</button>
+</div>
+</div>
+<div class="w-full md:w-[28%] p-6 bg-white/[0.02] flex flex-col">
+<div class="flex items-center justify-between mb-8">
+<h3 class="text-white font-medium text-lg tracking-wide">Sun <span class="font-light text-white/40 ml-1">15</span></h3>
+</div>
+<div class="overflow-y-auto custom-scrollbar flex-1 pr-2 max-h-[400px]">
+<div class="space-y-3">
+<button class="group w-full py-3 px-4 rounded-lg border border-white/10 bg-white/5 hover:bg-white/10 text-white/90 hover:text-white text-sm font-light tracking-wide text-center transition-all duration-300 hover:shadow-[0_0_15px_rgba(255,255,255,0.15)] hover:border-white/30 backdrop-blur-sm relative overflow-hidden">
+<span class="relative z-10 flex items-center justify-center">
+                            1:00am
+                            <span class="material-symbols-outlined text-[16px] ml-2 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">arrow_forward</span>
+</span>
+<div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent -translate-x-full group-hover:animate-[shimmer_1.5s_infinite]"></div>
+</button>
+<button class="group w-full py-3 px-4 rounded-lg border border-white/10 bg-white/5 hover:bg-white/10 text-white/90 hover:text-white text-sm font-light tracking-wide text-center transition-all duration-300 hover:shadow-[0_0_15px_rgba(255,255,255,0.15)] hover:border-white/30 backdrop-blur-sm relative overflow-hidden">
+<span class="relative z-10 flex items-center justify-center">
+                            3:00am
+                             <span class="material-symbols-outlined text-[16px] ml-2 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">arrow_forward</span>
+</span>
+</button>
+<button class="group w-full py-3 px-4 rounded-lg border border-white/10 bg-white/5 hover:bg-white/10 text-white/90 hover:text-white text-sm font-light tracking-wide text-center transition-all duration-300 hover:shadow-[0_0_15px_rgba(255,255,255,0.15)] hover:border-white/30 backdrop-blur-sm relative overflow-hidden">
+<span class="relative z-10 flex items-center justify-center">
+                            12:00pm
+                             <span class="material-symbols-outlined text-[16px] ml-2 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">arrow_forward</span>
+</span>
+</button>
+<button class="group w-full py-3 px-4 rounded-lg border border-white/10 bg-white/5 hover:bg-white/10 text-white/90 hover:text-white text-sm font-light tracking-wide text-center transition-all duration-300 hover:shadow-[0_0_15px_rgba(255,255,255,0.15)] hover:border-white/30 backdrop-blur-sm relative overflow-hidden">
+<span class="relative z-10 flex items-center justify-center">
+                            1:00pm
+                             <span class="material-symbols-outlined text-[16px] ml-2 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">arrow_forward</span>
+</span>
+</button>
+<button class="group w-full py-3 px-4 rounded-lg border border-white/10 bg-white/5 hover:bg-white/10 text-white/90 hover:text-white text-sm font-light tracking-wide text-center transition-all duration-300 hover:shadow-[0_0_15px_rgba(255,255,255,0.15)] hover:border-white/30 backdrop-blur-sm relative overflow-hidden">
+<span class="relative z-10 flex items-center justify-center">
+                            9:30pm
+                             <span class="material-symbols-outlined text-[16px] ml-2 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">arrow_forward</span>
+</span>
+</button>
+<button class="group w-full py-3 px-4 rounded-lg border border-white/10 bg-white/5 hover:bg-white/10 text-white/90 hover:text-white text-sm font-light tracking-wide text-center transition-all duration-300 hover:shadow-[0_0_15px_rgba(255,255,255,0.15)] hover:border-white/30 backdrop-blur-sm relative overflow-hidden">
+<span class="relative z-10 flex items-center justify-center">
+                            10:00pm
+                             <span class="material-symbols-outlined text-[16px] ml-2 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">arrow_forward</span>
+</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-8 text-center relative z-10">
+<span class="text-xs text-white/20 font-light tracking-wider hover:text-white/40 transition-colors cursor-default">Powered by Cal.com</span>
+</div>
+</div>
+<script>
+    // Shimmer animation for keyframes
+    const styleSheet = document.createElement("style");
+    styleSheet.innerText = `
+        @keyframes shimmer {
+            100% {
+                transform: translateX(100%);
+            }
+        }
+    `;
+    document.head.appendChild(styleSheet);
+</script>
+
+</body></html>

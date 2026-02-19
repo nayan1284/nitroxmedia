@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Nitrox Minimalist FAQ Grid</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Space+Grotesk:wght@500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#8B5CF6", // Purple accent
+                        "background-light": "#F3F4F6",
+                        "background-dark": "#050505", // Deep black
+                        "surface-dark": "#0F0F0F",
+                        "glass-dark": "rgba(20, 20, 20, 0.7)",
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Space Grotesk', 'sans-serif'],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.5rem",
+                    },
+                    boxShadow: {
+                        'glow': '0 0 20px rgba(139, 92, 246, 0.15)',
+                    }
+                },
+            },
+        };
+    </script>
+<style>
+        .glass-panel {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .faq-content {
+            transition: max-height 0.3s ease-out, opacity 0.3s ease-out, padding 0.3s ease;
+            max-height: 0;
+            opacity: 0;
+            overflow: hidden;
+        }
+        .faq-item.active .faq-content {
+            max-height: 500px;
+            opacity: 1;
+        }
+        .faq-item.active .chevron {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body class="bg-black text-gray-900 dark:text-white antialiased min-h-screen flex flex-col items-center">
+<div class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
+<div class="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-primary/5 rounded-full blur-[150px] opacity-40"></div>
+<div class="absolute bottom-0 right-0 w-[500px] h-[500px] bg-blue-500/5 rounded-full blur-[120px] opacity-30"></div>
+</div>
+<main class="relative z-10 container mx-auto px-4 py-20 max-w-6xl">
+<div class="text-center mb-16">
+<span class="text-xs font-bold tracking-[0.2em] uppercase text-gray-500 dark:text-gray-400 mb-4 block">Support &amp; Answers</span>
+<h1 class="text-4xl lg:text-5xl font-display font-bold text-white tracking-tight">
+                Questions You May <span class="text-gray-500">Ask</span>
+</h1>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-start w-full" id="faqContainer">
+<div class="faq-item group bg-surface-dark/50 backdrop-blur-sm border border-white/10 rounded-xl hover:border-white/20 transition-all duration-300">
+<button aria-expanded="false" class="w-full px-6 py-5 flex items-center justify-between text-left focus:outline-none">
+<span class="font-medium text-lg pr-4 text-gray-200 group-hover:text-primary transition-colors">Tell me about your agency?</span>
+<div class="flex-shrink-0 w-8 h-8 rounded-full bg-white/5 flex items-center justify-center text-gray-400 group-hover:bg-primary/20 group-hover:text-primary transition-all">
+<span class="material-symbols-outlined chevron transition-transform duration-300 text-xl">expand_more</span>
+</div>
+</button>
+<div class="faq-content px-6">
+<div class="pb-6 text-gray-400 leading-relaxed text-sm">
+                        Nitrox Media is a full-service digital agency specializing in high-performance marketing and content strategies. We help brands scale through data-driven campaigns and creative excellence.
+                    </div>
+</div>
+</div>
+<div class="faq-item group bg-surface-dark/50 backdrop-blur-sm border border-white/10 rounded-xl hover:border-white/20 transition-all duration-300">
+<button aria-expanded="false" class="w-full px-6 py-5 flex items-center justify-between text-left focus:outline-none">
+<span class="font-medium text-lg pr-4 text-gray-200 group-hover:text-primary transition-colors">What if I don't get the results?</span>
+<div class="flex-shrink-0 w-8 h-8 rounded-full bg-white/5 flex items-center justify-center text-gray-400 group-hover:bg-primary/20 group-hover:text-primary transition-all">
+<span class="material-symbols-outlined chevron transition-transform duration-300 text-xl">expand_more</span>
+</div>
+</button>
+<div class="faq-content px-6">
+<div class="pb-6 text-gray-400 leading-relaxed text-sm">
+                        We work on a performance basis for qualified partners. If we don't hit the agreed KPIs within the stipulated timeframe, we continue working for free until we do, or offer a refund based on our agreement terms.
+                    </div>
+</div>
+</div>
+<div class="faq-item group bg-surface-dark/50 backdrop-blur-sm border border-white/10 rounded-xl hover:border-white/20 transition-all duration-300">
+<button aria-expanded="false" class="w-full px-6 py-5 flex items-center justify-between text-left focus:outline-none">
+<span class="font-medium text-lg pr-4 text-gray-200 group-hover:text-primary transition-colors">Tell me about your content plan?</span>
+<div class="flex-shrink-0 w-8 h-8 rounded-full bg-white/5 flex items-center justify-center text-gray-400 group-hover:bg-primary/20 group-hover:text-primary transition-all">
+<span class="material-symbols-outlined chevron transition-transform duration-300 text-xl">expand_more</span>
+</div>
+</button>
+<div class="faq-content px-6">
+<div class="pb-6 text-gray-400 leading-relaxed text-sm">
+                        Our content plans are bespoke. We start with a comprehensive audit, define your pillars, and create a 3-month roadmap that includes video, written copy, and visual assets designed for engagement.
+                    </div>
+</div>
+</div>
+<div class="faq-item group bg-surface-dark/50 backdrop-blur-sm border border-white/10 rounded-xl hover:border-white/20 transition-all duration-300">
+<button aria-expanded="false" class="w-full px-6 py-5 flex items-center justify-between text-left focus:outline-none">
+<span class="font-medium text-lg pr-4 text-gray-200 group-hover:text-primary transition-colors">Why wouldn't I hire a freelancer?</span>
+<div class="flex-shrink-0 w-8 h-8 rounded-full bg-white/5 flex items-center justify-center text-gray-400 group-hover:bg-primary/20 group-hover:text-primary transition-all">
+<span class="material-symbols-outlined chevron transition-transform duration-300 text-xl">expand_more</span>
+</div>
+</button>
+<div class="faq-content px-6">
+<div class="pb-6 text-gray-400 leading-relaxed text-sm">
+                        Hiring a freelancer means managing a person. Hiring us means getting an entire system. You get access to a team of strategists, designers, and copywriters for the price of one senior hire, without the management overhead.
+                    </div>
+</div>
+</div>
+<div class="faq-item group bg-surface-dark/50 backdrop-blur-sm border border-white/10 rounded-xl hover:border-white/20 transition-all duration-300">
+<button aria-expanded="false" class="w-full px-6 py-5 flex items-center justify-between text-left focus:outline-none">
+<span class="font-medium text-lg pr-4 text-gray-200 group-hover:text-primary transition-colors">What services will you provide?</span>
+<div class="flex-shrink-0 w-8 h-8 rounded-full bg-white/5 flex items-center justify-center text-gray-400 group-hover:bg-primary/20 group-hover:text-primary transition-all">
+<span class="material-symbols-outlined chevron transition-transform duration-300 text-xl">expand_more</span>
+</div>
+</button>
+<div class="faq-content px-6">
+<div class="pb-6 text-gray-400 leading-relaxed text-sm">
+                        We offer end-to-end growth solutions: Paid Media (Meta, Google, TikTok Ads), Content Creation, Email Marketing Automation, and Conversion Rate Optimization (CRO).
+                    </div>
+</div>
+</div>
+<div class="faq-item group bg-surface-dark/50 backdrop-blur-sm border border-white/10 rounded-xl hover:border-white/20 transition-all duration-300">
+<button aria-expanded="false" class="w-full px-6 py-5 flex items-center justify-between text-left focus:outline-none">
+<span class="font-medium text-lg pr-4 text-gray-200 group-hover:text-primary transition-colors">Tell me about your workflow?</span>
+<div class="flex-shrink-0 w-8 h-8 rounded-full bg-white/5 flex items-center justify-center text-gray-400 group-hover:bg-primary/20 group-hover:text-primary transition-all">
+<span class="material-symbols-outlined chevron transition-transform duration-300 text-xl">expand_more</span>
+</div>
+</button>
+<div class="faq-content px-6">
+<div class="pb-6 text-gray-400 leading-relaxed text-sm">
+                        Our workflow is transparent and agile. We use Slack for daily comms and Trello/Notion for project tracking. You'll have a dedicated account manager and weekly reporting calls to ensure alignment.
+                    </div>
+</div>
+</div>
+<div class="faq-item group bg-surface-dark/50 backdrop-blur-sm border border-white/10 rounded-xl hover:border-white/20 transition-all duration-300">
+<button aria-expanded="false" class="w-full px-6 py-5 flex items-center justify-between text-left focus:outline-none">
+<span class="font-medium text-lg pr-4 text-gray-200 group-hover:text-primary transition-colors">How fast can we start?</span>
+<div class="flex-shrink-0 w-8 h-8 rounded-full bg-white/5 flex items-center justify-center text-gray-400 group-hover:bg-primary/20 group-hover:text-primary transition-all">
+<span class="material-symbols-outlined chevron transition-transform duration-300 text-xl">expand_more</span>
+</div>
+</button>
+<div class="faq-content px-6">
+<div class="pb-6 text-gray-400 leading-relaxed text-sm">
+                        Once the agreement is signed, we can kick off within 48 hours. The first week is usually dedicated to auditing accounts and setting up necessary tracking pixels.
+                    </div>
+</div>
+</div>
+<div class="faq-item group bg-surface-dark/50 backdrop-blur-sm border border-white/10 rounded-xl hover:border-white/20 transition-all duration-300">
+<button aria-expanded="false" class="w-full px-6 py-5 flex items-center justify-between text-left focus:outline-none">
+<span class="font-medium text-lg pr-4 text-gray-200 group-hover:text-primary transition-colors">Do you offer white labeling?</span>
+<div class="flex-shrink-0 w-8 h-8 rounded-full bg-white/5 flex items-center justify-center text-gray-400 group-hover:bg-primary/20 group-hover:text-primary transition-all">
+<span class="material-symbols-outlined chevron transition-transform duration-300 text-xl">expand_more</span>
+</div>
+</button>
+<div class="faq-content px-6">
+<div class="pb-6 text-gray-400 leading-relaxed text-sm">
+                        Yes, we partner with select agencies to provide white-label fulfillment. Contact our partnership team for specific rates and terms.
+                    </div>
+</div>
+</div>
+</div>
+</main>
+<script>
+        // FAQ Accordion Logic
+        const faqItems = document.querySelectorAll('.faq-item');
+        faqItems.forEach(item => {
+            const button = item.querySelector('button');
+            button.addEventListener('click', () => {
+                const isActive = item.classList.contains('active');
+                // Allow multiple open or close others? 
+                // The prompt asks for a "focused" grid. Often single-open is cleaner, but grid usually implies independent cells.
+                // Let's implement single open per column feel or just let them behave independently. 
+                // Given "minimalist", let's keep one open at a time to prevent grid reflow chaos if possible, 
+                // but actually, in a grid, auto-height changes can be jarring. 
+                // Let's stick to the previous logic: close others.
+                faqItems.forEach(otherItem => {
+                    if (otherItem !== item) {
+                        otherItem.classList.remove('active');
+                        otherItem.querySelector('button').setAttribute('aria-expanded', 'false');
+                    }
+                });
+                if (!isActive) {
+                    item.classList.add('active');
+                    button.setAttribute('aria-expanded', 'true');
+                } else {
+                    item.classList.remove('active');
+                    button.setAttribute('aria-expanded', 'false');
+                }
+            });
+        });
+    </script>
+
+</body></html>

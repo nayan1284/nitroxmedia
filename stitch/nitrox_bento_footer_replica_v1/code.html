@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Nitrox Bento Footer Replica v1</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#FFFFFF",
+              "background-light": "#F5F5F5",
+              "background-dark": "#000000",
+              "card-light": "#FFFFFF",
+              "card-dark": "#111111", 
+              "card-hover-dark": "#161616",
+              "text-light": "#111111",
+              "text-dark": "#FFFFFF",
+              "text-muted-light": "#666666",
+              "text-muted-dark": "#A1A1AA",
+              "input-bg-dark": "#1F1F1F",
+              "tag-pink": "#FF4D6D",
+            },
+            fontFamily: {
+              display: ["Inter", "sans-serif"],
+              body: ["Inter", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.75rem", // 12px
+              'xl': "1rem", // 16px
+            },
+          },
+        },
+      };
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .bento-card {
+            transition: transform 0.2s ease-in-out;
+        }::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #000; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #333; 
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555; 
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark min-h-screen flex flex-col items-center justify-center p-4 sm:p-8 antialiased selection:bg-white selection:text-black">
+<div class="max-w-6xl w-full mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-4 lg:gap-5">
+<div class="lg:col-span-7 flex flex-col gap-4 lg:gap-5">
+<div class="bg-card-light dark:bg-card-dark rounded-xl p-8 lg:p-10 flex flex-col justify-center border border-gray-100 dark:border-white/5 shadow-sm">
+<div class="flex items-center gap-2 mb-2">
+<div class="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse"></div>
+<span class="text-xs font-medium text-text-muted-light dark:text-text-muted-dark uppercase tracking-wider">Updates</span>
+</div>
+<h2 class="text-2xl sm:text-3xl font-bold mb-6 tracking-tight">Join our newsletter</h2>
+<form class="flex flex-col sm:flex-row gap-3 w-full">
+<div class="flex-grow">
+<label class="sr-only" for="email">Email address</label>
+<input class="w-full h-12 px-4 rounded-lg bg-gray-50 dark:bg-input-bg-dark border-transparent focus:border-gray-300 dark:focus:border-gray-600 focus:bg-white dark:focus:bg-black focus:ring-0 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-500 transition-all duration-200" id="email" name="email" placeholder="Email" type="email"/>
+</div>
+<button class="h-12 px-6 rounded-lg bg-black dark:bg-white text-white dark:text-black font-semibold hover:opacity-90 transition-opacity whitespace-nowrap" type="button">
+                            Subscribe
+                        </button>
+</form>
+</div>
+<div class="bg-card-light dark:bg-card-dark rounded-xl p-8 lg:p-10 flex flex-col flex-grow border border-gray-100 dark:border-white/5 shadow-sm">
+<h2 class="text-2xl sm:text-3xl font-bold mb-10 tracking-tight leading-tight">Check out these links<br/>before you go</h2>
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-8 sm:gap-4">
+<div class="flex flex-col gap-3">
+<h3 class="font-semibold text-lg mb-1">Company</h3>
+<a class="text-text-muted-light dark:text-text-muted-dark hover:text-black dark:hover:text-white transition-colors" href="#">Our story</a>
+<a class="text-text-muted-light dark:text-text-muted-dark hover:text-black dark:hover:text-white transition-colors" href="#">Support</a>
+<a class="text-text-muted-light dark:text-text-muted-dark hover:text-black dark:hover:text-white transition-colors" href="#">Press</a>
+</div>
+<div class="flex flex-col gap-3">
+<h3 class="font-semibold text-lg mb-1">Legal</h3>
+<a class="text-text-muted-light dark:text-text-muted-dark hover:text-black dark:hover:text-white transition-colors" href="#">Privacy policy</a>
+<a class="text-text-muted-light dark:text-text-muted-dark hover:text-black dark:hover:text-white transition-colors" href="#">Refund policy</a>
+<a class="text-text-muted-light dark:text-text-muted-dark hover:text-black dark:hover:text-white transition-colors" href="#">Community rules</a>
+</div>
+<div class="flex flex-col gap-3 col-span-2 sm:col-span-1">
+<h3 class="font-semibold text-lg mb-1">Job board</h3>
+<a class="text-text-muted-light dark:text-text-muted-dark hover:text-black dark:hover:text-white transition-colors" href="#">Join the collective</a>
+<a class="text-text-muted-light dark:text-text-muted-dark hover:text-black dark:hover:text-white transition-colors" href="#">Hire a 10x Designer</a>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-5 flex flex-col gap-4 lg:gap-5 h-full">
+<div class="bg-card-light dark:bg-card-dark rounded-xl p-8 lg:p-10 flex flex-col h-full border border-gray-100 dark:border-white/5 shadow-sm min-h-[300px]">
+<div class="flex items-center gap-3 mb-4">
+<h2 class="text-2xl sm:text-3xl font-bold tracking-tight">For creators</h2>
+<span class="bg-tag-pink text-white text-[10px] font-bold px-1.5 py-0.5 rounded-sm uppercase tracking-wide">New</span>
+</div>
+<p class="text-text-muted-light dark:text-text-muted-dark leading-relaxed mb-8 text-base sm:text-lg">
+                        Do you have a big social media presence, popular newsletter or podcast? Becoming a 10x Affiliate can be a great way to earn passive income!
+                    </p>
+<div class="mt-auto">
+<a class="text-text-muted-light dark:text-text-muted-dark hover:text-black dark:hover:text-white transition-colors inline-flex items-center gap-1 group" href="#">
+                            Become an affiliate
+                            <span class="opacity-0 -ml-2 group-hover:opacity-100 group-hover:ml-0 transition-all duration-300">→</span>
+</a>
+</div>
+</div>
+<div class="grid grid-cols-4 gap-4 lg:gap-5 h-40 lg:h-48">
+<a class="bg-card-light dark:bg-card-dark hover:bg-gray-50 dark:hover:bg-card-hover-dark rounded-xl flex items-center justify-center border border-gray-100 dark:border-white/5 shadow-sm transition-colors group" href="#">
+<svg aria-hidden="true" class="w-8 h-8 fill-black dark:fill-white group-hover:scale-110 transition-transform duration-200" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg>
+</a>
+<a class="bg-card-light dark:bg-card-dark hover:bg-gray-50 dark:hover:bg-card-hover-dark rounded-xl flex items-center justify-center border border-gray-100 dark:border-white/5 shadow-sm transition-colors group" href="#">
+<svg aria-hidden="true" class="w-8 h-8 fill-black dark:fill-white group-hover:scale-110 transition-transform duration-200" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path></svg>
+</a>
+<a class="bg-card-light dark:bg-card-dark hover:bg-gray-50 dark:hover:bg-card-hover-dark rounded-xl flex items-center justify-center border border-gray-100 dark:border-white/5 shadow-sm transition-colors group" href="#">
+<svg aria-hidden="true" class="w-9 h-9 text-black dark:text-white group-hover:scale-110 transition-transform duration-200" fill="currentColor" viewBox="0 0 24 24">
+<path clip-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.416 2.065c.636-.247 1.363-.416 2.427-.465C8.901 1.534 9.256 1.522 11.685 1.522h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" fill-rule="evenodd"></path>
+</svg>
+</a>
+<a class="bg-card-light dark:bg-card-dark hover:bg-gray-50 dark:hover:bg-card-hover-dark rounded-xl flex items-center justify-center border border-gray-100 dark:border-white/5 shadow-sm transition-colors group" href="#">
+<svg aria-hidden="true" class="w-8 h-8 fill-black dark:fill-white group-hover:scale-110 transition-transform duration-200" viewBox="0 0 24 24">
+<path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" fill-rule="evenodd"></path>
+</svg>
+</a>
+</div>
+</div>
+</div>
+<div class="mt-12 text-center">
+<p class="text-text-muted-light dark:text-text-muted-dark text-sm opacity-60 hover:opacity-100 transition-opacity cursor-default">
+                Nitrox Media is a project by Nitrox©
+            </p>
+</div>
+</div>
+<script>
+        // Check local storage or system preference
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark')
+        } else {
+            document.documentElement.classList.remove('dark')
+        }
+    </script>
+</body></html>

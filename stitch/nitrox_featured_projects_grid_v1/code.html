@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Nitrox Media - Featured Projects</title>
+<meta content="Featured Projects section for Nitrox Media showcasing high-impact video and design work." name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Poppins:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#3b82f6", 
+              secondary: "#7c3aed", 
+              "background-light": "#f3f4f6",
+              "background-dark": "#050505",
+              "card-dark": "#111111",
+              "card-light": "#ffffff",
+              "glass-dark": "rgba(20, 20, 20, 0.7)",
+              "glass-light": "rgba(255, 255, 255, 0.7)",
+            },
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+              display: ["Poppins", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.75rem",
+              'xl': "1rem",
+              '2xl': "1.5rem",
+              '3xl': "2rem",
+            },
+            boxShadow: {
+              'glow': '0 0 20px rgba(14, 165, 255, 0.15)',
+              'glow-hover': '0 0 40px rgba(124, 58, 237, 0.4)',
+              'inner-glow': 'inset 0 0 20px rgba(255, 255, 255, 0.05)',
+            },
+            backgroundImage: {
+              'brand-gradient': 'linear-gradient(135deg, #0ea5ff, #7c3aed)',
+            }
+          },
+        },
+      };
+    </script>
+<style>
+      .glass-panel {
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        background: rgba(255, 255, 255, 0.03);
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        border-left: 1px solid rgba(255, 255, 255, 0.05);
+      }
+      .glass-card-overlay {
+        background: rgba(10, 10, 10, 0.6);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+      }
+      .scrollbar-hide::-webkit-scrollbar {
+          display: none;
+      }
+      .scrollbar-hide {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+      }
+      .gradient-border-container {
+        position: relative;
+        background: #111;
+        border-radius: 1.5rem;
+        z-index: 0;
+      }
+      .gradient-border-container::before {
+        content: "";
+        position: absolute;
+        inset: -1px;
+        border-radius: 1.5rem;
+        padding: 1px;
+        background: linear-gradient(135deg, #0ea5ff, #7c3aed); 
+        -webkit-mask: 
+           linear-gradient(#fff 0 0) content-box, 
+           linear-gradient(#fff 0 0);
+        -webkit-mask-composite: xor;
+        mask-composite: exclude;
+        z-index: 1;
+        opacity: 0.5;
+        transition: opacity 0.3s ease;
+      }
+      .gradient-border-container:hover::before {
+        opacity: 1;
+      }
+      .aspect-portrait {
+        aspect-ratio: 9 / 16;
+      }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-gray-900 dark:text-white transition-colors duration-300 font-sans min-h-screen relative overflow-x-hidden selection:bg-cyan-500 selection:text-white">
+<div class="fixed top-0 left-0 w-full h-full pointer-events-none overflow-hidden -z-10">
+<div class="absolute top-[-20%] left-[-10%] w-[60%] h-[60%] bg-[#0ea5ff]/10 blur-[150px] rounded-full mix-blend-screen"></div>
+<div class="absolute bottom-[-10%] right-[-10%] w-[50%] h-[50%] bg-[#7c3aed]/10 blur-[150px] rounded-full mix-blend-screen"></div>
+<div class="absolute top-[30%] left-[40%] w-[30%] h-[30%] bg-purple-500/5 blur-[120px] rounded-full"></div>
+</div>
+<section class="py-16 md:py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+<div class="text-center mb-12 relative z-10">
+<span class="inline-block py-1.5 px-4 rounded-full bg-white/5 backdrop-blur-sm border border-white/10 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400 text-xs font-bold tracking-widest uppercase mb-6 shadow-glow">Our Work</span>
+<h2 class="text-lg md:text-xl text-gray-400 font-medium mb-2 tracking-wide">Explore Our</h2>
+<h1 class="text-4xl md:text-6xl lg:text-7xl font-display font-bold text-white mb-10 tracking-tight drop-shadow-2xl">
+                Featured <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#0ea5ff] to-[#7c3aed]">Projects</span>
+</h1>
+<div class="flex flex-wrap justify-center gap-3 md:gap-4 mb-12">
+<button class="px-6 py-3 rounded-full text-sm font-semibold transition-all duration-300 bg-white/10 text-white border border-white/20 shadow-[0_0_15px_rgba(14,165,255,0.3)] hover:bg-white/15">
+                    Ads Contents
+                </button>
+<button class="px-6 py-3 rounded-full text-sm font-medium transition-all duration-300 bg-transparent text-gray-400 hover:text-white hover:bg-white/5 border border-transparent hover:border-white/10">
+                    Visual Contents
+                </button>
+<button class="px-6 py-3 rounded-full text-sm font-medium transition-all duration-300 bg-transparent text-gray-400 hover:text-white hover:bg-white/5 border border-transparent hover:border-white/10">
+                    Automations
+                </button>
+<button class="px-6 py-3 rounded-full text-sm font-medium transition-all duration-300 bg-transparent text-gray-400 hover:text-white hover:bg-white/5 border border-transparent hover:border-white/10">
+                    Dashboards
+                </button>
+</div>
+</div>
+<div class="relative w-full">
+<button class="absolute -left-4 md:-left-12 top-1/2 -translate-y-1/2 z-20 p-3 rounded-full bg-black/40 backdrop-blur-md border border-white/10 text-white/70 hover:text-white hover:bg-black/60 hover:border-white/30 transition-all duration-300 hidden md:flex items-center justify-center group">
+<span class="material-symbols-outlined text-2xl group-hover:-translate-x-0.5 transition-transform">chevron_left</span>
+</button>
+<button class="absolute -right-4 md:-right-12 top-1/2 -translate-y-1/2 z-20 p-3 rounded-full bg-black/40 backdrop-blur-md border border-white/10 text-white/70 hover:text-white hover:bg-black/60 hover:border-white/30 transition-all duration-300 hidden md:flex items-center justify-center group">
+<span class="material-symbols-outlined text-2xl group-hover:translate-x-0.5 transition-transform">chevron_right</span>
+</button>
+<div class="flex overflow-x-auto scrollbar-hide snap-x snap-mandatory gap-6 pb-12 pt-4 px-4 -mx-4 md:px-0 md:mx-0">
+<div class="snap-center shrink-0 w-[280px] md:w-[320px] gradient-border-container group hover:scale-[1.02] hover:-translate-y-2 transition-all duration-500 shadow-xl hover:shadow-glow-hover">
+<div class="relative w-full aspect-portrait rounded-[1.4rem] overflow-hidden bg-gray-900">
+<img alt="TikTok Ad Strategy" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDk8IvdXKF55ivd4NbK504M-CF6VK1u1k1ew9O0YlCFAuaREB97TC5QWJUeEuJ56SK017B0U4_w1YbnbIHb9yrO2DzmoB2OkfrGD5GKp0AR6K9cBT-oGgaZ3yLJp90BdvqWnY0dST2oSnAYvHZ6u9CNo5F4NXLHkQaf_wgXC8kYflk1IbVH8tfaDMf63qxHaUbDlYcqpn13rh8xiNeWKQQ3I24wRcuNXp94sDMuiAML5P6VARuZel03qNydFKSkX9brYbfwsSPirswd"/>
+<div class="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/60 pointer-events-none"></div>
+<div class="absolute inset-0 flex items-center justify-center z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<div class="w-16 h-16 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center shadow-[0_0_30px_rgba(255,255,255,0.2)]">
+<span class="material-symbols-outlined text-4xl text-white fill-1">play_arrow</span>
+</div>
+</div>
+</div>
+</div>
+<div class="snap-center shrink-0 w-[280px] md:w-[320px] gradient-border-container group hover:scale-[1.02] hover:-translate-y-2 transition-all duration-500 shadow-xl hover:shadow-glow-hover">
+<div class="relative w-full aspect-portrait rounded-[1.4rem] overflow-hidden bg-gray-900">
+<img alt="UGC Content Creator" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnxU6rIrEzXiMNSLsFeI9jMzi5BDk1miFRlTPK7lnQp36WSOMaYDBdJAetQvjWFBVTziz3KeCEdmtj9yAiPWlq0bkq2TIaTQIAjhvgckisjAe3NwQ_pRzbTAo-C0PSXa8kdetjTz0IpIyQ3M7YhHPXLUxwN5Q_Dbd7OYE6qVs44CJIRsmo8VRdv5c3fKAkNEuMkTWH1Fz4TwfAKDMTI4E7AIItX8pKJCdw9Ckv1ayl6JG1jGI2ul8hKqq93Rys5DAxurE0X_-QmS9A"/>
+<div class="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/60 pointer-events-none"></div>
+<div class="absolute inset-0 flex items-center justify-center z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<div class="w-16 h-16 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center shadow-[0_0_30px_rgba(255,255,255,0.2)]">
+<span class="material-symbols-outlined text-4xl text-white fill-1">play_arrow</span>
+</div>
+</div>
+</div>
+</div>
+<div class="snap-center shrink-0 w-[280px] md:w-[320px] gradient-border-container group hover:scale-[1.02] hover:-translate-y-2 transition-all duration-500 shadow-xl hover:shadow-glow-hover">
+<div class="relative w-full aspect-portrait rounded-[1.4rem] overflow-hidden bg-gray-900">
+<div class="w-full h-full bg-gradient-to-br from-indigo-900 to-black relative">
+<div class="absolute top-0 right-0 w-full h-full opacity-40">
+<div class="absolute top-1/4 right-1/4 w-48 h-48 bg-blue-600 rounded-full blur-[60px] animate-pulse"></div>
+</div>
+<div class="absolute inset-0 flex items-center justify-center">
+<h4 class="text-4xl font-black text-white/10 -rotate-90 uppercase tracking-tighter">Hook</h4>
+</div>
+</div>
+<div class="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/60 pointer-events-none"></div>
+<div class="absolute inset-0 flex items-center justify-center z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<div class="w-16 h-16 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center shadow-[0_0_30px_rgba(255,255,255,0.2)]">
+<span class="material-symbols-outlined text-4xl text-white fill-1">play_arrow</span>
+</div>
+</div>
+</div>
+</div>
+<div class="snap-center shrink-0 w-[280px] md:w-[320px] gradient-border-container group hover:scale-[1.02] hover:-translate-y-2 transition-all duration-500 shadow-xl hover:shadow-glow-hover">
+<div class="relative w-full aspect-portrait rounded-[1.4rem] overflow-hidden bg-gray-900">
+<img alt="Lifestyle Product Shot" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnaHrwKBwATKPR3_nbFdb4ELxSuHBmWPzYbvDuQPby7g865bsm0gKnVM_x8b0l3_uExgIv2Jfzp9oVtl8icYrxyhf0hu2djbxVMNnERnL_Zu6H2JlsSv2w_eFBfS5x_SCiBif_Kg5J362lJf2I4-NV-_28GpQ3_Jx84eyWTqHL78ALDyv07UNzDgzTU8tIZeBvdWmOngKqzdW9buvZbAOsWRj-AltpTWGdgSnORrd8q63qD7WsWowPSw7YM5M_bbUNRR47yt42LthC"/>
+<div class="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/60 pointer-events-none"></div>
+<div class="absolute inset-0 flex items-center justify-center z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<div class="w-16 h-16 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center shadow-[0_0_30px_rgba(255,255,255,0.2)]">
+<span class="material-symbols-outlined text-4xl text-white fill-1">play_arrow</span>
+</div>
+</div>
+</div>
+</div>
+<div class="snap-center shrink-0 w-[280px] md:w-[320px] gradient-border-container group hover:scale-[1.02] hover:-translate-y-2 transition-all duration-500 shadow-xl hover:shadow-glow-hover">
+<div class="relative w-full aspect-portrait rounded-[1.4rem] overflow-hidden bg-gray-900">
+<div class="w-full h-full bg-gradient-to-br from-gray-900 to-black flex items-center justify-center">
+<span class="material-symbols-outlined text-6xl text-white/10">movie_creation</span>
+</div>
+<div class="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/60 pointer-events-none"></div>
+<div class="absolute inset-0 flex items-center justify-center z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<div class="w-16 h-16 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center shadow-[0_0_30px_rgba(255,255,255,0.2)]">
+<span class="material-symbols-outlined text-4xl text-white fill-1">play_arrow</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="flex justify-center items-center gap-2 mt-2">
+<div class="h-1 w-12 bg-gradient-to-r from-[#0ea5ff] to-[#7c3aed] rounded-full"></div>
+<div class="h-1 w-2 bg-white/20 rounded-full"></div>
+<div class="h-1 w-2 bg-white/20 rounded-full"></div>
+<div class="h-1 w-2 bg-white/20 rounded-full"></div>
+</div>
+</div>
+<div class="mt-16 text-center">
+<button class="group inline-flex items-center gap-3 px-8 py-4 rounded-full bg-white/5 backdrop-blur-sm text-white font-semibold border border-white/10 hover:bg-white/10 hover:border-blue-500/50 hover:shadow-glow transition-all duration-300">
+                View All Case Studies
+                <span class="material-symbols-outlined text-xl group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</section>
+<script>
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.documentElement.classList.add('dark');
+        } else {
+             document.documentElement.classList.add('dark');
+        }
+    </script>
+</body></html>

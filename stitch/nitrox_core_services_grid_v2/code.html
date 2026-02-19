@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Nitrox Minimalist Services Grid</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Space+Grotesk:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        body {
+            background-color: #050507;
+            background-image: radial-gradient(circle at 50% 0%, rgba(59, 130, 246, 0.15), transparent 60%);
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.3s ease;
+        }
+        .glass-card:hover {
+            background: rgba(255, 255, 255, 0.06);
+            border-color: rgba(255, 255, 255, 0.1);
+            transform: translateY(-2px);
+        }
+        .metric-pill {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(4px);
+        }
+    </style>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#3B82F6",
+                        "surface-dark": "#0F0F12",
+                        "border-dark": "#1F1F24",
+                    },
+                    fontFamily: {
+                        display: ["Space Grotesk", "sans-serif"],
+                        body: ["Inter", "sans-serif"],
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+<body class="font-body antialiased text-white selection:bg-blue-500/30 selection:text-blue-200">
+<main class="relative z-10 min-h-screen flex flex-col items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-10 max-w-2xl mx-auto">
+<h2 class="text-[10px] font-medium tracking-[0.3em] uppercase text-blue-400 mb-3 opacity-80">Core Capabilities</h2>
+<h1 class="text-3xl md:text-4xl font-display font-light text-white mb-4 tracking-tight">
+            Types Of Work We Do
+        </h1>
+<p class="text-gray-400 font-light text-sm md:text-base max-w-lg mx-auto">
+            Refined media solutions. Engineered for precision and growth.
+        </p>
+</div>
+<div class="w-full max-w-6xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+<div class="glass-card rounded-xl p-5 relative group flex flex-col items-center text-center h-full">
+<div class="absolute top-3 right-3 metric-pill text-[10px] text-blue-300 font-medium px-2 py-0.5 rounded-full">
+                +45% Reach
+            </div>
+<div class="pt-6 pb-2 w-full">
+<h3 class="text-lg font-display font-medium text-white tracking-wide mb-2 group-hover:text-blue-400 transition-colors">Short Form Videos</h3>
+<p class="text-xs text-gray-400 font-light leading-relaxed max-w-[90%] mx-auto">
+                    Optimized top-of-funnel videos designed to capture attention instantly.
+                </p>
+</div>
+</div>
+<div class="glass-card rounded-xl p-5 relative group flex flex-col items-center text-center h-full">
+<div class="absolute top-3 right-3 metric-pill text-[10px] text-purple-300 font-medium px-2 py-0.5 rounded-full">
+                2x Trust
+            </div>
+<div class="pt-6 pb-2 w-full">
+<h3 class="text-lg font-display font-medium text-white tracking-wide mb-2 group-hover:text-purple-400 transition-colors">SAAS Videos</h3>
+<p class="text-xs text-gray-400 font-light leading-relaxed max-w-[90%] mx-auto">
+                    Technical walkthroughs and product demos that build authority.
+                </p>
+</div>
+</div>
+<div class="glass-card rounded-xl p-5 relative group flex flex-col items-center text-center h-full">
+<div class="absolute top-3 right-3 metric-pill text-[10px] text-cyan-300 font-medium px-2 py-0.5 rounded-full">
+                -20h/Week
+            </div>
+<div class="pt-6 pb-2 w-full">
+<h3 class="text-lg font-display font-medium text-white tracking-wide mb-2 group-hover:text-cyan-400 transition-colors">Workflow Automation</h3>
+<p class="text-xs text-gray-400 font-light leading-relaxed max-w-[90%] mx-auto">
+                    Streamline your content pipeline with automated systems.
+                </p>
+</div>
+</div>
+<div class="glass-card rounded-xl p-5 relative group flex flex-col items-center text-center h-full">
+<div class="absolute top-3 right-3 metric-pill text-[10px] text-rose-300 font-medium px-2 py-0.5 rounded-full">
+                Data-Driven
+            </div>
+<div class="pt-6 pb-2 w-full">
+<h3 class="text-lg font-display font-medium text-white tracking-wide mb-2 group-hover:text-rose-400 transition-colors">Performance Analysis</h3>
+<p class="text-xs text-gray-400 font-light leading-relaxed max-w-[90%] mx-auto">
+                    Deep dive analytics to understand ROI and iterate strategies.
+                </p>
+</div>
+</div>
+<div class="glass-card rounded-xl p-5 relative group flex flex-col items-center text-center h-full">
+<div class="absolute top-3 right-3 metric-pill text-[10px] text-amber-300 font-medium px-2 py-0.5 rounded-full">
+                30% Conv Lift
+            </div>
+<div class="pt-6 pb-2 w-full">
+<h3 class="text-lg font-display font-medium text-white tracking-wide mb-2 group-hover:text-amber-400 transition-colors">Ad Creatives &amp; VSLs</h3>
+<p class="text-xs text-gray-400 font-light leading-relaxed max-w-[90%] mx-auto">
+                    Dynamic paid ads content that resonates with cold traffic.
+                </p>
+</div>
+</div>
+<div class="glass-card rounded-xl p-5 relative group flex flex-col items-center text-center h-full">
+<div class="absolute top-3 right-3 metric-pill text-[10px] text-emerald-300 font-medium px-2 py-0.5 rounded-full">
+                High Impact
+            </div>
+<div class="pt-6 pb-2 w-full">
+<h3 class="text-lg font-display font-medium text-white tracking-wide mb-2 group-hover:text-emerald-400 transition-colors">Launch Videos</h3>
+<p class="text-xs text-gray-400 font-light leading-relaxed max-w-[90%] mx-auto">
+                    Trendy edits for major product or service launches.
+                </p>
+</div>
+</div>
+<div class="glass-card rounded-xl p-5 relative group flex flex-col items-center text-center h-full">
+<div class="absolute top-3 right-3 metric-pill text-[10px] text-pink-300 font-medium px-2 py-0.5 rounded-full">
+                Authority
+            </div>
+<div class="pt-6 pb-2 w-full">
+<h3 class="text-lg font-display font-medium text-white tracking-wide mb-2 group-hover:text-pink-400 transition-colors">Video Podcasts</h3>
+<p class="text-xs text-gray-400 font-light leading-relaxed max-w-[90%] mx-auto">
+                    Long-form editing and micro-clipping for multiple platforms.
+                </p>
+</div>
+</div>
+<div class="glass-card rounded-xl p-5 relative group flex flex-col items-center text-center h-full">
+<div class="absolute top-3 right-3 metric-pill text-[10px] text-indigo-300 font-medium px-2 py-0.5 rounded-full">
+                Core Blueprint
+            </div>
+<div class="pt-6 pb-2 w-full">
+<h3 class="text-lg font-display font-medium text-white tracking-wide mb-2 group-hover:text-indigo-400 transition-colors">Content Strategy</h3>
+<p class="text-xs text-gray-400 font-light leading-relaxed max-w-[90%] mx-auto">
+                    Holistic planning to define voice, audience, and roadmap.
+                </p>
+</div>
+</div>
+</div>
+</main>
+
+</body></html>

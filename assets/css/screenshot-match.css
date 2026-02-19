@@ -1,0 +1,1926 @@
+/* ============================================
+   NITROX MEDIA - ADVANCED OPTIMIZATION LAYER
+   Sticky Header · Chatbot Sync · Brand Identity
+   Performance · CTA Boost · UI Polish
+   ============================================ */
+
+
+/* ============================================
+   1. HEADER — STICKY + MODERN GLASS
+   ============================================ */
+/* ============================================
+   1. HEADER — SPECTRAM CLONE STYLE
+   ============================================ */
+header#top {
+    background: transparent !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    border-bottom: none !important;
+    box-shadow: none !important;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+header#top.header-scrolled {
+    background: transparent !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    border-bottom: none !important;
+    box-shadow: none !important;
+}
+
+.logo-text {
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+    color: #ffffff !important;
+    letter-spacing: -0.03em !important;
+    font-weight: 800 !important;
+}
+
+/* Nav Pill Container */
+.nav-pill-container {
+    background: rgba(255, 255, 255, 0.03) !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    backdrop-filter: blur(25px) !important;
+    -webkit-backdrop-filter: blur(25px) !important;
+    transition: all 0.4s ease !important;
+}
+
+.nav-pill-container:hover {
+    border-color: rgba(255, 255, 255, 0.15) !important;
+    background: rgba(255, 255, 255, 0.05) !important;
+}
+
+.nav-pill-item {
+    color: #ffffff !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+.nav-pill-item span,
+.nav-pill-item .material-symbols-outlined {
+    opacity: 1 !important;
+    color: #ffffff !important;
+}
+
+.nav-pill-item.active {
+    background: rgba(255, 255, 255, 0.08) !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1), inset 0 0 0 1px rgba(255, 255, 255, 0.1) !important;
+}
+
+.nav-pill-item:not(.active):hover {
+    background: rgba(255, 255, 255, 0.04) !important;
+}
+
+/* Right Side Styles */
+.action-icon {
+    color: #ffffff !important;
+    opacity: 1 !important;
+}
+
+.action-icon:hover {
+    opacity: 1 !important;
+    background: rgba(255, 255, 255, 0.1) !important;
+}
+
+.profile-avatar {
+    border-color: rgba(255, 255, 255, 0.15) !important;
+    transition: all 0.3s ease !important;
+}
+
+.profile-avatar:hover {
+    border-color: #ffffff !important;
+    transform: scale(1.05) !important;
+}
+
+.pro-badge {
+    color: #ffffff !important;
+    background: rgba(255, 255, 255, 0.05) !important;
+    border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.pro-badge:hover {
+    background: rgba(255, 255, 255, 0.12) !important;
+    border-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+/* CTA Join Now Button */
+.cta-pill-btn {
+    background: rgba(255, 255, 255, 0.08) !important;
+    border-color: rgba(255, 255, 255, 0.15) !important;
+    color: #ffffff !important;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.03) !important;
+    overflow: hidden !important;
+}
+
+.cta-pill-btn:hover {
+    background: rgba(255, 255, 255, 0.15) !important;
+    border-color: rgba(255, 255, 255, 0.3) !important;
+    box-shadow: 0 0 40px rgba(85, 82, 255, 0.15), inset 0 0 10px rgba(255, 255, 255, 0.1) !important;
+    transform: translateY(-1px) !important;
+}
+
+.cta-pill-btn .material-symbols-outlined {
+    font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24 !important;
+    color: #ffffff !important;
+}
+
+@keyframes sparkle-glow {
+
+    0%,
+    100% {
+        filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.4));
+        opacity: 0.8;
+    }
+
+    50% {
+        filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.8));
+        opacity: 1;
+    }
+}
+
+.cta-pill-btn .material-symbols-outlined {
+    animation: sparkle-glow 2s infinite ease-in-out !important;
+}
+
+/* Header CTA — Legacy removal or adaptation */
+header#top .nav-link-item {
+    transition: all 0.3s ease !important;
+}
+
+
+/* Hamburger stays visible */
+header#top .hamburger svg {
+    stroke: #0f172a !important;
+    transition: stroke 0.4s ease !important;
+}
+
+
+/* ============================================
+   2. HERO — DARK GRADIENT READABILITY
+   ============================================ */
+#hero {
+    background-color: transparent !important;
+    color: #ffffff !important;
+}
+
+/* Hero Badge — frosted glass on dark */
+.hero-badge {
+    background: rgba(255, 255, 255, 0.1) !important;
+    border: 1px solid rgba(255, 255, 255, 0.18) !important;
+    backdrop-filter: blur(12px) !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08) !important;
+    padding: 6px 16px;
+    border-radius: 9999px;
+}
+
+.hero-badge span {
+    color: rgba(255, 255, 255, 0.85) !important;
+}
+
+#hero h1 {
+    color: #ffffff !important;
+    text-shadow: 0 2px 20px rgba(0, 0, 0, 0.12);
+}
+
+#hero p {
+    color: #cbd5e1 !important;
+}
+
+/* CTA — Premium glass with pulse glow */
+#hero a[href="#booking"] {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.18), rgba(255, 255, 255, 0.06)) !important;
+    border: 1.5px solid rgba(255, 255, 255, 0.28) !important;
+    backdrop-filter: blur(16px) !important;
+    color: #ffffff !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.2) !important;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    font-weight: 600 !important;
+    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    animation: cta-soft-pulse 3s ease-in-out infinite !important;
+}
+
+#hero a[href="#booking"]:hover {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.28), rgba(255, 255, 255, 0.12)) !important;
+    border-color: rgba(255, 255, 255, 0.4) !important;
+    transform: translateY(-2px) scale(1.02) !important;
+    box-shadow: 0 8px 30px rgba(59, 130, 246, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.3) !important;
+    animation: none !important;
+}
+
+/* Node Diagram */
+@keyframes line-flow {
+    from { stroke-dashoffset: 24; }
+    to { stroke-dashoffset: 0; }
+}
+
+.connector-line-gray {
+    stroke: rgba(15, 23, 42, 0.08) !important;
+    stroke-dasharray: 8;
+    animation: line-flow 1.5s linear infinite !important;
+}
+
+@keyframes float-centered {
+    0%, 100% { transform: translate(-50%, 0); }
+    50% { transform: translate(-50%, -8px); }
+}
+
+.animate-float-centered {
+    animation: float-centered 5s ease-in-out infinite !important;
+}
+
+@keyframes hero-glow-pulse {
+    0%, 100% { opacity: 0.4; transform: translate(-50%, -50%) scale(1); }
+    50% { opacity: 0.8; transform: translate(-50%, -50%) scale(1.2); }
+}
+
+.hero-system-glow {
+    display: none !important;
+}
+
+#hero .bg-white {
+    background-color: rgba(255, 255, 255, 0.08) !important;
+    border-color: rgba(255, 255, 255, 0.12) !important;
+    color: #ffffff !important;
+    backdrop-filter: blur(10px);
+}
+
+#hero .bg-white .text-gray-900,
+#hero .bg-white .text-gray-500,
+#hero .bg-white .font-bold {
+    color: rgba(255, 255, 255, 0.85) !important;
+}
+
+#hero .bg-white\/80 {
+    background: rgba(255, 255, 255, 0.06) !important;
+    border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+#hero .bg-white\/80 span {
+    color: rgba(255, 255, 255, 0.6) !important;
+}
+
+#hero .text-gray-400 {
+    color: rgba(255, 255, 255, 0.45) !important;
+}
+
+/* Growth Rate Card */
+#hero .shadow-xl {
+    background: rgba(255, 255, 255, 0.08) !important;
+    border-color: rgba(255, 255, 255, 0.12) !important;
+    backdrop-filter: blur(14px) !important;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2) !important;
+}
+
+#hero .shadow-xl span,
+#hero .shadow-xl .text-gray-900 {
+    color: #ffffff !important;
+}
+
+#hero .shadow-xl .text-gray-400 {
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+
+#hero .shadow-xl svg path[stroke="#111827"] {
+    stroke: rgba(255, 255, 255, 0.65) !important;
+}
+
+#hero .md\:hidden .bg-white {
+    background: rgba(255, 255, 255, 0.08) !important;
+    border-color: rgba(255, 255, 255, 0.12) !important;
+}
+
+
+/* ============================================
+   3. STATS / TRANSITION — DARK VISIBILITY
+   ============================================ */
+.stats-transition-section {
+    background: transparent !important;
+    color: #ffffff !important;
+}
+
+.stats-transition-section h2 {
+    color: #ffffff !important;
+}
+
+.stats-transition-section h2 span.text-primary {
+    color: #60a5fa !important;
+}
+
+.stats-transition-section .stat-number {
+    color: #ffffff !important;
+    text-shadow: 0 0 25px rgba(96, 165, 250, 0.35);
+}
+
+.stats-transition-section .stat-number span {
+    color: #93c5fd !important;
+}
+
+.stats-transition-section .text-gray-400,
+.stats-transition-section p.text-gray-500,
+.stats-transition-section .text-xs.text-gray-500 {
+    color: rgba(255, 255, 255, 0.55) !important;
+}
+
+.stats-transition-section .text-gray-800 {
+    color: #ffffff !important;
+}
+
+
+/* ============================================
+   4. TESTIMONIALS — DARK VISIBILITY
+   ============================================ */
+.testimonials-v2 {
+    background: transparent !important;
+    color: #ffffff !important;
+}
+
+.testimonials-v2 h2 {
+    color: #ffffff !important;
+}
+
+.testimonials-v2 .text-gray-900 {
+    color: #ffffff !important;
+}
+
+.testimonials-v2 .text-gray-700 {
+    color: #e2e8f0 !important;
+}
+
+.testimonials-v2 .font-bold.text-gray-900 {
+    color: #ffffff !important;
+}
+
+.testimonials-v2 .video-phone-frame {
+    border-color: rgba(255, 255, 255, 0.12) !important;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3) !important;
+}
+
+
+/* ============================================
+   5. CASE STUDY — GLOW NUMBERS
+   ============================================ */
+.case-study-v2-card .text-3xl.font-bold {
+    text-shadow: 0 0 25px rgba(96, 165, 250, 0.45), 0 0 50px rgba(96, 165, 250, 0.15) !important;
+    color: #ffffff !important;
+}
+
+.case-study-v2-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.case-study-v2-card::before {
+    content: '';
+    position: absolute;
+    inset: -1px;
+    border-radius: inherit;
+    background: linear-gradient(135deg, rgba(96, 165, 250, 0.12), rgba(168, 85, 247, 0.08));
+    z-index: -1;
+    filter: blur(6px);
+    opacity: 0.5;
+}
+
+
+/* ============================================
+   6. WHY CHOOSE US — DARK GLOBAL VISIBILITY
+   ============================================ */
+#why-us {
+    background: transparent !important;
+    position: relative;
+    overflow: hidden;
+}
+
+#why-us .text-center span.text-gray-500,
+#why-us .text-center .text-\[11px\] {
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+
+#why-us h2 {
+    color: #ffffff !important;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    letter-spacing: -0.03em;
+}
+
+#why-us h2 .text-gray-400 {
+    color: rgba(255, 255, 255, 0.45) !important;
+}
+
+/* Nitrox Card — White card with dark text */
+#why-us .nitrox-media-card {
+    background: rgba(255, 255, 255, 0.08) !important;
+    border: 1px solid rgba(255, 255, 255, 0.12) !important;
+    box-shadow: 0 12px 50px -10px rgba(0, 0, 0, 0.35) !important;
+    border-radius: 24px !important;
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+}
+
+.nitrox-media-card .text-gray-700,
+.nitrox-media-card .text-gray-800,
+.nitrox-media-card h3 {
+    color: #ffffff !important;
+}
+
+.nitrox-media-card .text-gray-400 {
+    color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.nitrox-media-card .bg-\[\#F9FAFB\] {
+    background-color: rgba(255, 255, 255, 0.03) !important;
+}
+
+/* Right side — Other Agencies */
+#why-us h3 {
+    color: #ffffff !important;
+}
+
+.agency-list-item,
+.agency-list-item span {
+    color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.agency-list-item .material-symbols-outlined {
+    font-size: 16px !important;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.3) !important;
+}
+
+/* Why Us CTA — Brand Blue + Pulse */
+#why-us a[href="#booking"] {
+    background: linear-gradient(135deg, #3B82F6, #2563EB) !important;
+    box-shadow: 0 4px 18px rgba(59, 130, 246, 0.4) !important;
+    color: #ffffff !important;
+    font-weight: 700 !important;
+    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    animation: cta-blue-pulse 3s ease-in-out infinite;
+}
+
+#why-us a[href="#booking"]:hover {
+    background: linear-gradient(135deg, #2563EB, #1d4ed8) !important;
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 8px 28px rgba(59, 130, 246, 0.5) !important;
+    animation: none;
+}
+
+#why-us .glass-card {
+    backdrop-filter: none !important;
+    background: transparent !important;
+    border: none !important;
+}
+
+
+/* ============================================
+   7. PROCESS — ICON STYLES
+   ============================================ */
+.chatgpt-icon-box {
+    background: rgba(255, 255, 255, 0.9) !important;
+    border: 1.5px solid rgba(255, 255, 255, 0.2) !important;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2) !important;
+}
+ 
+ .gemini-icon-box {
+    background: rgba(255, 255, 255, 0.9) !important;
+    border: 1.5px solid rgba(255, 255, 255, 0.2) !important;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2) !important;
+}
+
+
+/* ============================================
+   8. AI WIDGET / CHATBOT — GRADIENT SYNC
+   Removes mismatched #fafafa background
+   and syncs with global gradient.
+   ============================================ */
+
+/* Remove light theme entirely */
+#feedback.section-light-theme,
+.section-light-theme {
+    background: transparent !important;
+    color: #ffffff !important;
+}
+
+/* Heading */
+#feedback h2 {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff;
+}
+
+/* Gradient accent text in heading */
+#feedback h2 span.font-bold {
+    background: linear-gradient(135deg, #93c5fd, #c4b5fd, #60a5fa) !important;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    filter: drop-shadow(0 0 15px rgba(147, 197, 253, 0.3));
+}
+
+/* Badge pill */
+#feedback .border-gray-300 {
+    border-color: rgba(255, 255, 255, 0.18) !important;
+    background: rgba(255, 255, 255, 0.08) !important;
+    color: rgba(255, 255, 255, 0.75) !important;
+    backdrop-filter: blur(10px) !important;
+}
+
+/* Body text */
+#feedback .text-gray-600 {
+    color: rgba(255, 255, 255, 0.65) !important;
+}
+
+#feedback .text-gray-700 {
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
+#feedback .text-gray-900 {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff;
+}
+
+#feedback .text-gray-500 {
+    color: rgba(255, 255, 255, 0.55) !important;
+}
+
+/* Check circle labels */
+#feedback .text-sm.font-medium {
+    color: rgba(255, 255, 255, 0.75) !important;
+}
+
+/* CTA Button — Glass */
+#feedback a[href="#booking"] {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05)) !important;
+    border: 1.5px solid rgba(255, 255, 255, 0.22) !important;
+    color: #ffffff !important;
+    backdrop-filter: blur(16px) !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.15) !important;
+    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    animation: cta-soft-pulse 3s ease-in-out infinite;
+}
+
+#feedback a[href="#booking"]:hover {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.1)) !important;
+    border-color: rgba(255, 255, 255, 0.35) !important;
+    transform: translateY(-2px) scale(1.02) !important;
+    box-shadow: 0 8px 30px rgba(59, 130, 246, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.25) !important;
+    animation: none;
+}
+
+/* Visual container — dark glass */
+#feedback .hero-visual-light {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.04) 0%, rgba(59, 130, 246, 0.08) 100%) !important;
+    border-color: rgba(255, 255, 255, 0.1) !important;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25) !important;
+}
+
+/* Inner gradient blobs — make more vibrant on dark */
+#feedback .from-purple-200 {
+    --tw-gradient-from: rgba(139, 92, 246, 0.35) var(--tw-gradient-from-position) !important;
+}
+
+#feedback .to-blue-200 {
+    --tw-gradient-to: rgba(59, 130, 246, 0.35) var(--tw-gradient-to-position) !important;
+}
+
+#feedback .from-pink-100 {
+    --tw-gradient-from: rgba(236, 72, 153, 0.2) var(--tw-gradient-from-position) !important;
+}
+
+#feedback .to-indigo-100 {
+    --tw-gradient-to: rgba(99, 102, 241, 0.25) var(--tw-gradient-to-position) !important;
+}
+
+#feedback .animate-float.rounded-full {
+    box-shadow: none !important;
+    border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Glass card inside visual */
+#feedback .glass-card-light {
+    background: rgba(255, 255, 255, 0.06) !important;
+    border: 1px solid rgba(255, 255, 255, 0.12) !important;
+    backdrop-filter: blur(20px) saturate(150%) !important;
+    -webkit-backdrop-filter: blur(20px) saturate(150%) !important;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25) !important;
+}
+
+#feedback .glass-card-light::before {
+    background: linear-gradient(135deg, rgba(96, 165, 250, 0.4), rgba(139, 92, 246, 0.3)) !important;
+    opacity: 0.4 !important;
+}
+
+#feedback .glass-card-light h3 {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+}
+
+#feedback .glass-card-light p {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+/* Emerald badge */
+#feedback .bg-emerald-50 {
+    background: rgba(16, 185, 129, 0.12) !important;
+}
+
+#feedback .text-emerald-700 {
+    color: #34d399 !important;
+}
+
+#feedback .border-emerald-200 {
+    border-color: rgba(52, 211, 153, 0.25) !important;
+}
+
+/* Trusted badge */
+#feedback .bg-white\/90 {
+    background: rgba(255, 255, 255, 0.08) !important;
+    border-color: rgba(255, 255, 255, 0.15) !important;
+    backdrop-filter: blur(16px) !important;
+}
+
+#feedback .bg-gray-100 {
+    background: rgba(255, 255, 255, 0.12) !important;
+}
+
+/* Light leak decorations — mute on dark */
+#feedback .hero-bg-noise {
+    opacity: 0.2 !important;
+}
+
+#feedback .light-leak-1 {
+    display: none !important;
+}
+
+#feedback .light-leak-2 {
+    display: none !important;
+}
+
+
+/* ============================================
+   9. CTA ENHANCEMENT — GLOBAL CONVERSION
+   ============================================ */
+
+/* Pulse glow keyframes */
+@keyframes cta-soft-pulse {
+
+    0%,
+    100% {
+        box-shadow: 0 4px 20px rgba(255, 255, 255, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.15);
+    }
+
+    50% {
+        box-shadow: 0 4px 28px rgba(59, 130, 246, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    }
+}
+
+@keyframes cta-blue-pulse {
+
+    0%,
+    100% {
+        box-shadow: 0 4px 18px rgba(59, 130, 246, 0.35);
+    }
+
+    50% {
+        box-shadow: 0 4px 28px rgba(59, 130, 246, 0.55);
+    }
+}
+
+/* Booking section CTAs (time slots) — unified hover */
+#booking button {
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+#booking button:hover {
+    transform: translateY(-1px);
+}
+
+/* Global CTA smoothness */
+a[href="#booking"] {
+    cursor: pointer;
+}
+
+
+/* ============================================
+   10. GRADIENT TEXT ENHANCEMENT
+   ============================================ */
+
+/* Premium gradient utility */
+.text-gradient-premium {
+    background: linear-gradient(135deg, #ffffff 0%, #93c5fd 50%, #c4b5fd 100%) !important;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    filter: drop-shadow(0 0 15px rgba(147, 197, 253, 0.2));
+}
+
+/* FAQ heading gradient accent */
+#faq h2 span.text-gray-500 {
+    background: linear-gradient(135deg, #94a3b8, #c4b5fd) !important;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+}
+
+/* Booking heading gradient word */
+#booking h2 span.font-medium {
+    background: linear-gradient(135deg, #ffffff, #93c5fd) !important;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+}
+
+/* Services heading */
+#services h2 {
+    color: #ffffff !important;
+}
+
+/* Process heading gradient span */
+#process h2 span {
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.15));
+}
+
+
+/* ============================================
+   11. SPACING — NORMALIZATION
+   ============================================ */
+
+/* Balanced section padding */
+section {
+    padding-top: 4rem !important;
+    padding-bottom: 4rem !important;
+}
+
+/* ---- VIDEO CONTROLS & SMOOTH SCROLL ---- */
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+.scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+#featured-projects-row {
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    cursor: grab;
+    user-select: none;
+}
+
+#featured-projects-row.cursor-grabbing {
+    cursor: grabbing;
+}
+
+.v-control-btn {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateY(10px);
+    opacity: 0;
+}
+
+.group:hover .v-control-btn {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.v-control-btn:hover {
+    transform: scale(1.1);
+    background: rgba(255, 255, 255, 0.25) !important;
+    border-color: rgba(255, 255, 255, 0.4) !important;
+}
+
+.v-control-btn:active {
+    transform: scale(0.95);
+}
+
+/* Ensure project cards are clean when hidden */
+.project-card[style*="display: none"] {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 0 !important;
+    height: 0 !important;
+    overflow: hidden;
+}
+
+/* Material Symbols sizing */
+.material-symbols-outlined {
+    font-size: 20px;
+}
+
+@media (min-width: 640px) {
+    section {
+        padding-top: 5rem !important;
+        padding-bottom: 5rem !important;
+    }
+}
+
+/* Process step gaps */
+.process-step {
+    margin-bottom: 4rem !important;
+}
+
+@media (min-width: 768px) {
+    .process-step {
+        margin-bottom: 6rem !important;
+    }
+}
+
+/* Hero padding unified */
+#hero {
+    padding-top: calc(var(--header-height) + 40px) !important;
+    padding-bottom: 3.5rem !important;
+}
+
+
+/* ============================================
+   12. PERFORMANCE OPTIMIZATION
+   ============================================ */
+
+/* GPU acceleration for animated elements */
+.animate-float,
+.animate-drift,
+.animate-breathe,
+.animate-pulse,
+.floating-badge-pill,
+.sphere-aura {
+    will-change: transform;
+    transform: translateZ(0);
+}
+
+/* Reduce paint areas */
+section {
+    contain: layout style;
+}
+
+/* Optimize backdrop-filter rendering */
+.glass-card,
+.glass-panel,
+header#top {
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+}
+
+/* Lighter animations — reduce GPU-heavy repaints */
+.ambient-glow {
+    will-change: opacity;
+}
+
+/* Optimized transitions — use specific properties */
+.glass-card {
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+        border-color 0.3s ease !important;
+}
+
+/* Reduce unnecessary recalculations */
+.faq-content {
+    will-change: max-height, opacity;
+}
+
+/* Image rendering optimization */
+img {
+    content-visibility: auto;
+}
+
+
+/* ============================================
+   13. GLOBAL UI POLISH
+   ============================================ */
+
+/* Glass card hover */
+.glass-card:hover {
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.18), 0 0 0 1px rgba(255, 255, 255, 0.06) !important;
+}
+
+/* Buttons — smooth cubic bezier */
+a,
+button {
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Featured work — transparent */
+#work {
+    background: transparent !important;
+}
+
+.video-showcase-v2 {
+    background: transparent !important;
+}
+
+/* Footer tag badge glow */
+.bg-tag-pink {
+    box-shadow: 0 0 10px rgba(255, 77, 109, 0.25);
+}
+
+/* Process step circles — subtle glow */
+.step-circle {
+    border-color: rgba(255, 255, 255, 0.12) !important;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.4), 0 0 25px rgba(85, 82, 255, 0.12) !important;
+}
+
+.process-step .bg-primary {
+    box-shadow: 0 2px 10px rgba(85, 82, 255, 0.25);
+}
+
+/* Consistent icon button line */
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+
+/* ============================================
+   14. BRAND SYNC — COLOR CONSISTENCY
+   ============================================ */
+
+/* Ensure primary blue matches across buttons */
+.bg-\[\#3B82F6\],
+.bg-blue-500 {
+    background-color: var(--primary, #3b82f6) !important;
+}
+
+/* Primary text highlight consistency */
+.text-primary {
+    color: #60a5fa !important;
+}
+
+/* Consistent gradient text across sections */
+.text-gradient {
+    background: linear-gradient(135deg, #ffffff 0%, #a5b4fc 100%) !important;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+}
+
+
+/* ============================================
+   15. MOBILE MENU — DARK GLASS
+   ============================================ */
+.mobile-menu-overlay {
+    background: rgba(5, 5, 5, 0.92) !important;
+    backdrop-filter: blur(24px) !important;
+    -webkit-backdrop-filter: blur(24px) !important;
+}
+
+.mobile-menu-overlay a {
+    color: #ffffff !important;
+    transition: opacity 0.3s ease !important;
+}
+
+.mobile-menu-overlay a:hover {
+    opacity: 0.7;
+}
+
+.mobile-menu-overlay a.bg-\[\#0F172A\] {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05)) !important;
+    border: 1px solid rgba(255, 255, 255, 0.18) !important;
+    color: #ffffff !important;
+}
+
+
+/* ============================================
+   15. PREMIUM MOTION & CINEMATIC UTILITIES
+   ============================================ */
+:root {
+    --header-height: 85px;
+    --motion-ease: cubic-bezier(0.16, 1, 0.3, 1);
+    --motion-duration: 0.8s;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Base Reveal Interaction */
+.reveal {
+    opacity: 0;
+    transform: translateY(20px) scale(0.98);
+    transition:
+        opacity var(--motion-duration) var(--motion-ease),
+        transform var(--motion-duration) var(--motion-ease);
+    will-change: opacity, transform;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+/* Cinematic Stagger Logic */
+.reveal-group>* {
+    opacity: 0;
+    transform: translateY(15px);
+    transition:
+        opacity 0.6s var(--motion-ease),
+        transform 0.6s var(--motion-ease);
+}
+
+.reveal-group.active>* {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Pre-defined Stagger Delays */
+.reveal-delay-100 {
+    transition-delay: 0.1s !important;
+}
+
+.reveal-delay-200 {
+    transition-delay: 0.2s !important;
+}
+
+.reveal-delay-300 {
+    transition-delay: 0.3s !important;
+}
+
+.reveal-delay-400 {
+    transition-delay: 0.4s !important;
+}
+
+.reveal-delay-500 {
+    transition-delay: 0.5s !important;
+}
+
+/* Micro-Interactions */
+.btn-premium {
+    transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+.btn-premium:active {
+    transform: scale(0.96) !important;
+}
+
+.card-premium {
+    transition: transform 0.4s var(--motion-ease), box-shadow 0.4s var(--motion-ease) !important;
+}
+
+.card-premium:hover {
+    transform: translateY(-5px) !important;
+}
+
+/* Custom Animation for Tab Switching */
+@keyframes fadeInUpPremium {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in-up {
+    animation: fadeInUpPremium 0.5s var(--motion-ease) forwards;
+}
+
+/* ============================================
+   HEADER & HERO ALIGNMENT FIX
+   ============================================ */
+#hero {
+    position: relative;
+    padding-top: calc(var(--header-height) + 80px) !important;
+    padding-bottom: 120px !important;
+    min-height: auto;
+    display: block !important;
+}
+
+@media (max-width: 768px) {
+    #hero {
+        padding-top: calc(var(--header-height) + 40px) !important;
+        padding-bottom: 60px !important;
+    }
+}
+
+/* Mobile Menu Modern Dropdown */
+.mobile-dropdown {
+    position: absolute;
+    top: calc(100% - 12px);
+    right: 20px;
+    width: 220px;
+    background: rgba(15, 23, 42, 0.85);
+    backdrop-filter: blur(20px) saturate(160%);
+    -webkit-backdrop-filter: blur(20px) saturate(160%);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 20px;
+    padding: 10px;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(12px) scale(0.95);
+    transform-origin: top right;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.mobile-dropdown.open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0) scale(1);
+}
+
+.mobile-dropdown a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 16px;
+    color: white !important;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 14px;
+    transition: all 0.2s ease;
+    margin-bottom: 2px;
+}
+
+.mobile-dropdown a:last-child {
+    margin-bottom: 0;
+}
+
+.mobile-dropdown a:hover {
+    background: rgba(255, 255, 255, 0.08);
+    transform: translateX(4px);
+}
+
+.mobile-dropdown a .material-symbols-outlined {
+    font-size: 20px;
+    opacity: 0.8;
+}
+
+/* Free Audit Special Style */
+.mobile-dropdown a.audit-link {
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(124, 58, 237, 0.2));
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.mobile-dropdown a.audit-link:hover {
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.3), rgba(124, 58, 237, 0.3));
+    transform: translateX(4px) scale(1.02);
+}
+
+.mobile-dropdown a.audit-link .material-symbols-outlined {
+    color: #ffd700;
+    opacity: 1;
+}
+
+/* Coming Soon Toast */
+#coming-soon-toast {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%) translateY(100px);
+    background: rgba(15, 23, 42, 0.9);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 99px;
+    font-size: 14px;
+    font-weight: 500;
+    z-index: 9999;
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.4s ease;
+    opacity: 0;
+    pointer-events: none;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+#coming-soon-toast.show {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+}
+
+/* Scrollbar Hiding */
+.scrollbar-hide {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari and Opera */
+}
+
+
+
+/* ============================================
+   16. MOBILE RESPONSIVE — PRECISION FIX
+   ============================================ */
+
+/* ---- GLOBAL OVERFLOW FIX ---- */
+html {
+    overflow-x: hidden !important;
+    width: 100% !important;
+}
+
+body {
+    overflow-x: hidden !important;
+    width: 100% !important;
+    max-width: 100vw !important;
+    position: relative;
+}
+
+/* Absolutely positioned decorative blobs — clip to section */
+section {
+    overflow-x: clip !important;
+}
+
+/* Exception: featured work carousel needs horizontal scroll */
+#work {
+    overflow-x: visible !important;
+}
+
+#work>div {
+    overflow-x: visible !important;
+}
+
+/* ============================================
+   TABLET BREAKPOINT (max-width: 768px)
+   ============================================ */
+@media (max-width: 768px) {
+
+    /* ---- HEADER ---- */
+    header#top {
+        background: transparent !important;
+        backdrop-filter: none !important;
+        -webkit-backdrop-filter: none !important;
+        border-bottom: none !important;
+        box-shadow: none !important;
+    }
+
+    /* Subtle Mobile Header Glass Effect on Scroll */
+    header#top.header-scrolled {
+        background: rgba(255, 255, 255, 0.08) !important;
+        backdrop-filter: blur(8px) saturate(180%) !important;
+        -webkit-backdrop-filter: blur(8px) saturate(180%) !important;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
+    }
+
+    header#top nav {
+        padding-left: 1.25rem !important;
+        padding-right: 1.25rem !important;
+    }
+
+    /* ---- HERO (EXACT DESKTOP STYLE SCALED) ---- */
+    #hero {
+        padding-top: calc(var(--header-height) + 30px) !important;
+        padding-bottom: 2rem !important;
+    }
+
+    #hero h1 {
+        font-size: clamp(2.5rem, 10vw, 3.5rem) !important;
+        line-height: 1.1 !important;
+        letter-spacing: -0.03em !important;
+    }
+
+    #hero p {
+        font-size: 1rem !important;
+        line-height: 1.6 !important;
+        color: rgba(255, 255, 255, 0.8) !important;
+        max-width: 90% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    /* RESTORE DESKTOP ANIMATION VIA SCALING */
+    #hero .hidden.md\:block {
+        display: block !important;
+        transform: scale(0.65);
+        transform-origin: top center;
+        width: 100% !important;
+        height: 380px !important;
+        margin-bottom: -120px !important;
+        pointer-events: none;
+    }
+
+    /* Hide the simplified fallback */
+    #hero .md\:hidden {
+        display: none !important;
+    }
+
+    /* CTA button */
+    #hero a[href="#booking"] {
+        padding: 1rem 2.25rem !important;
+        font-size: 0.95rem !important;
+        margin-bottom: 2.5rem !important;
+    }
+
+    /* ---- VIDEO SHOWCASE ---- */
+    #video h2 {
+        font-size: 2.25rem !important;
+    }
+
+    .video-frame-laptop {
+        border-radius: 16px !important;
+        max-width: 95% !important;
+    }
+
+    /* ---- STATS / TRANSITION (RESTORE ABSOLUTE PILLS) ---- */
+    .stats-transition-section {
+        padding-top: 4rem !important;
+        padding-bottom: 4rem !important;
+    }
+
+    .stats-transition-section h2 {
+        font-size: 1.85rem !important;
+        line-height: 1.3 !important;
+    }
+
+    /* RESTORE ABSOLUTE BADGES BUT SCALE */
+    .floating-badge-pill {
+        transform: scale(0.75) !important;
+        white-space: nowrap !important;
+    }
+
+    /* Reposition to avoid edge overflow */
+    .stats-transition-section .absolute.-left-4 {
+        left: 2rem !important;
+    }
+
+    .stats-transition-section .absolute.-right-4 {
+        right: 2rem !important;
+    }
+
+    .stat-number {
+        font-size: 2.5rem !important;
+    }
+
+    /* ---- TESTIMONIALS ---- */
+    .testimonials-v2 h2 {
+        font-size: 2.25rem !important;
+    }
+
+    .video-phone-frame {
+        width: 260px !important;
+        border-radius: 30px !important;
+    }
+
+    /* ---- FEATURED WORK ---- */
+    #work h2 {
+        font-size: 2.5rem !important;
+    }
+
+    /* ---- WHY CHOOSE US ---- */
+    #why-us {
+        padding-top: 5rem !important;
+        padding-bottom: 5rem !important;
+    }
+
+    #why-us h2 {
+        font-size: 2.25rem !important;
+    }
+
+    .nitrox-media-card {
+        padding: 2.5rem !important;
+        border-radius: 24px !important;
+    }
+
+    /* ---- PROCESS TIMELINE ---- */
+    #process {
+        padding-top: 5rem !important;
+        padding-bottom: 5rem !important;
+    }
+
+    .process-step {
+        margin-bottom: 4rem !important;
+        gap: 3rem !important;
+    }
+
+    .process-step h3 {
+        font-size: 1.75rem !important;
+    }
+
+    /* Scale Orbit Animation */
+    .process-step .relative.w-72.h-72 {
+        width: 280px !important;
+        height: 280px !important;
+    }
+
+    /* ---- SERVICES GRID (COMPACT BUT FITHFUL) ---- */
+    #services {
+        padding-top: 5rem !important;
+        padding-bottom: 5rem !important;
+    }
+
+    #services h2 {
+        font-size: 2.25rem !important;
+    }
+
+    /* 2col layout for better scaling than single col */
+    #services .grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 1rem !important;
+    }
+
+    #services .glass-card {
+        padding: 1.25rem !important;
+        min-height: 160px !important;
+    }
+
+    #services .glass-card h3 {
+        font-size: 0.95rem !important;
+    }
+
+    /* ---- WORK WITH US / BOOKING ---- */
+    #booking {
+        padding-top: 4rem !important;
+    }
+
+    #booking .glass-panel {
+        display: flex !important;
+        flex-direction: column !important;
+        border-radius: 20px !important;
+    }
+
+    #booking .w-full.md\:w-\[40\%\] {
+        width: 100% !important;
+        padding: 1.5rem !important;
+    }
+
+    #booking .w-full.md\:w-\[28\%\] {
+        width: 100% !important;
+        padding: 1.5rem !important;
+        border-top: 1px solid rgba(255, 255, 255, 0.05);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    #booking .w-full.md\:w-\[32\%\] {
+        width: 100% !important;
+        padding: 2rem !important;
+    }
+
+    /* RESTORE BOOKING BLOBS SCALED */
+    #booking .absolute.w-\[600px\],
+    #booking .absolute.w-\[500px\] {
+        display: block !important;
+        opacity: 0.2 !important;
+        transform: scale(0.5) !important;
+    }
+
+    /* ---- FOOTER OPTIMIZATION (COMPACT DESIGN) ---- */
+    #footer {
+        padding-top: 3rem !important;
+        padding-bottom: 2.5rem !important;
+    }
+
+    #footer .bg-card-dark.rounded-xl.p-8,
+    #footer .bg-card-dark.rounded-xl.p-8.lg\:p-10 {
+        padding: 1.5rem !important;
+    }
+
+    #footer h2 {
+        font-size: 1.85rem !important;
+    }
+
+    #footer .grid {
+        gap: 1.25rem !important;
+    }
+}
+
+/* ============================================
+   SMALL PHONE BREAKPOINT (max-width: 480px)
+   ============================================ */
+@media (max-width: 480px) {
+
+    /* ---- HERO (SCALE DOWN MORE) ---- */
+    #hero h1 {
+        font-size: 2.25rem !important;
+    }
+
+    #hero .hidden.md\:block {
+        transform: scale(0.45);
+        margin-bottom: -180px !important;
+        height: 250px !important;
+    }
+
+    /* ---- STATS ---- */
+    .stats-transition-section h2 {
+        font-size: 1.5rem !important;
+    }
+
+    /* ---- SERVICES ---- */
+    #services .grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    /* ---- BOOKING CALENDAR SCALE ---- */
+    #booking .grid.grid-cols-7 button {
+        width: 2.25rem !important;
+        height: 2.25rem !important;
+        font-size: 0.85rem !important;
+    }
+
+    /* ---- FOOTER ---- */
+    #footer h2 {
+        font-size: 1.75rem !important;
+    }
+
+    #footer .grid-cols-2 {
+        grid-template-columns: 1fr 1fr !important;
+        gap: 1.5rem !important;
+    }
+}
+
+
+/* ============================================
+   TOUCH & INTERACTION OPTIMIZATION
+   ============================================ */
+@media (hover: none) and (pointer: coarse) {
+
+    /* Tap targets */
+    a,
+    button {
+        min-height: 48px;
+        min-width: 48px;
+    }
+
+    /* PRESERVE ALL ANIMATIONS */
+    /* No animation-duration: 0s overrides */
+
+    /* Optimize Blurs for Speed but Maintain Look */
+    .glass-card,
+    .glass-panel {
+        backdrop-filter: blur(14px) !important;
+        -webkit-backdrop-filter: blur(14px) !important;
+    }
+
+    /* Tab Scroll Smoothing */
+    .overflow-x-auto {
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        -webkit-overflow-scrolling: touch;
+    }
+}
+
+/* ============================================
+   17. MOBILE & TABLET UI REFINEMENT
+   Refining Tab alignment, Image Fit, and Header Button
+   ============================================ */
+
+/* ---- 1. TAB BOX ALIGNMENT FIX ---- */
+.featured-v2-tab {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    min-height: 44px !important;
+    padding: 0 24px !important;
+    white-space: nowrap !important;
+    flex-shrink: 0 !important;
+    border: 1px solid rgba(255, 255, 255, 0.12) !important;
+    background: rgba(255, 255, 255, 0.05) !important;
+    border-radius: 12px !important;
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    color: rgba(255, 255, 255, 0.6) !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+.featured-v2-tab.active {
+    background: #ffffff !important;
+    color: #000000 !important;
+    border-color: #ffffff !important;
+    box-shadow: 0 8px 25px rgba(255, 255, 255, 0.15) !important;
+    transform: translateY(-1px) !important;
+}
+
+/* Spacing cleanup for the tab row */
+.tabs-row {
+    gap: 10px !important;
+    padding-bottom: 5px !important;
+}
+
+/* ---- 2. IMAGE FRAME FIT — AUTOMATION & DASHBOARD ---- */
+.project-card {
+    height: auto !important;
+}
+
+.project-card .rounded-2xl {
+    aspect-ratio: 9/14 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    background: #0a0a0a !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    position: relative !important;
+    width: 100% !important;
+}
+
+.project-card img,
+.project-card video {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    position: absolute !important;
+    inset: 0 !important;
+}
+
+/* Fix for uneven jumping on load */
+.project-card .rounded-2xl::before {
+    content: "";
+    display: block;
+    padding-bottom: 155.5%;
+}
+
+/* ---- 3. HEADER BUTTON — MOBILE & TABLET SIZE FIX ---- */
+.cta-pill-btn {
+    white-space: nowrap !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+@media (max-width: 1024px) {
+    .cta-pill-btn {
+        padding: 0 16px !important;
+        min-height: 40px !important;
+        gap: 6px !important;
+    }
+
+    .cta-pill-btn span:last-child {
+        font-size: 12.5px !important;
+    }
+
+    .cta-pill-btn .material-symbols-outlined {
+        font-size: 18px !important;
+    }
+}
+
+@media (max-width: 640px) {
+    .cta-pill-btn {
+        padding: 0 12px !important;
+        min-height: 36px !important;
+        gap: 4px !important;
+    }
+
+    .cta-pill-btn span:last-child {
+        font-size: 11px !important;
+        font-weight: 700 !important;
+    }
+
+    .cta-pill-btn .material-symbols-outlined {
+        font-size: 16px !important;
+    }
+
+    @media (max-width: 360px) {
+        .cta-pill-btn .material-symbols-outlined {
+            display: none !important;
+        }
+    }
+}
+
+/* ---- 4. RESPONSIVE CLEANUP ---- */
+#featured-projects-row {
+    scroll-padding: 0 20px !important;
+}
+
+@media (max-width: 640px) {
+    header#top nav {
+        padding-top: 0.75rem !important;
+        padding-bottom: 0.75rem !important;
+    }
+
+    .logo-text {
+        font-size: 1.1rem !important;
+    }
+}
+
+/* ============================================
+   18. CUSTOM TESTIMONIAL VIDEO PLAYER
+   Portrait (9:16) Format · No Fullscreen · Clean UI
+   ============================================ */
+
+.testimonial-carousel-wrapper {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.testimonial-carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    -webkit-overflow-scrolling: touch;
+    gap: 0;
+}
+
+.testimonial-carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.testimonial-slide {
+    flex: 0 0 100%;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.testimonial-video-container {
+    position: relative;
+    width: 100%;
+    max-width: 320px; /* Fixed mobile width for portrait feel */
+    margin: 2.5rem auto 3.5rem;
+    aspect-ratio: 9 / 16; /* Force Reels format */
+    border-radius: 28px; 
+    overflow: hidden;
+    background: #000;
+    box-shadow: 0 40px 100px -20px rgba(0, 0, 0, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.testimonial-video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Fit inside the 9:16 frame without cropping */
+    display: block;
+}
+
+.video-custom-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(8px); /* Blur the thumbnail/video behind */
+    -webkit-backdrop-filter: blur(8px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 10;
+    cursor: pointer;
+}
+
+.video-custom-overlay.hidden {
+    opacity: 0;
+    pointer-events: none;
+    backdrop-filter: blur(0px); /* Remove blur when playing */
+    -webkit-backdrop-filter: blur(0px);
+    transform: scale(1.02);
+}
+
+.play-btn-large {
+    width: 80px;
+    height: 80px;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
+.video-custom-overlay:hover .play-btn-large {
+    transform: scale(1.12);
+    background: rgba(255, 255, 255, 0.25);
+    border-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 50px rgba(85, 82, 255, 0.45);
+}
+
+.play-btn-large .material-symbols-outlined {
+    font-size: 40px;
+    color: white;
+    margin-left: 4px;
+    font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+}
+
+/* Disable full-screen native UI (Cross-browser) */
+video::-webkit-media-controls-fullscreen-button { display: none !important; }
+video::-webkit-media-controls-play-button { display: none !important; }
+video::-webkit-media-controls-timeline { display: none !important; }
+
+/* Show overlay on hover while playing */
+.testimonial-video-container:hover .video-custom-overlay.hidden {
+    opacity: 1;
+    pointer-events: auto;
+    backdrop-filter: blur(4px); /* Light blur on hover */
+    -webkit-backdrop-filter: blur(4px);
+}
+
+@media (max-width: 768px) {
+    .testimonial-video-container {
+        max-width: 280px;
+        border-radius: 24px;
+        margin-top: 1.5rem;
+        margin-bottom: 2.5rem;
+    }
+    .play-btn-large {
+        width: 68px;
+        height: 68px;
+    }
+    .play-btn-large .material-symbols-outlined {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 480px) {
+    .testimonial-video-container {
+        max-width: calc(100% - 3rem); /* Stay portrait on mobile */
+        aspect-ratio: 9 / 16;
+    }
+}
+
+/* ============================================
+   19. CASE STUDY SECTION OPTIMIZATION
+   Portrait Video · High Hierarchy · Animated Metrics
+   ============================================ */
+
+.case-study-video-frame {
+    position: relative;
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+    aspect-ratio: 9 / 16;
+    border-radius: 24px;
+    overflow: hidden;
+    background: #000;
+    box-shadow: 0 40px 100px -20px rgba(0, 0, 0, 0.8), 0 0 20px rgba(85, 82, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transform: translateZ(0);
+}
+
+.case-study-video-frame video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.case-metric-card {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    padding: 24px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+.case-metric-card:hover {
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(255, 255, 255, 0.15);
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px -10px rgba(0, 0, 0, 0.5);
+}
+
+.metric-glow-border {
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(135deg, rgba(85, 82, 255, 0.3), transparent, rgba(168, 85, 247, 0.3));
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+}
+
+.mini-graph {
+    width: 100%;
+    height: 30px;
+    margin-top: 12px;
+    stroke-dasharray: 100;
+    stroke-dashoffset: 100;
+    animation: metric-chart-draw 2s ease forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes metric-chart-draw {
+    to { stroke-dashoffset: 0; }
+}
+
+.case-check-item-v2 {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 16px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+    transition: all 0.3s ease;
+}
+
+.case-check-item-v2:hover {
+    background: rgba(255, 255, 255, 0.07);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 1024px) {
+    .case-study-video-frame {
+        max-width: 280px;
+    }
+}
+
+@media (max-width: 640px) {
+    .case-study-video-frame {
+        max-width: 100%;
+        width: calc(100% - 2rem);
+    }
+}
