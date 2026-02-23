@@ -2222,6 +2222,132 @@
     </section>
 
     <!-- ============ SECTION 12: FAQ ============ -->
+    
+    <!-- ============ SECTION 12.5: PRICING PLANS (Updated & Moved) ============ -->
+    <section id="pricing" class="w-full py-16 sm:py-24">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 text-center">
+            <h2 class="pricing-heading text-3xl sm:text-4xl md:text-4xl font-bold tracking-tight text-white mb-3 font-display md:whitespace-nowrap">Simple Growth Plans For Your Business</h2>
+            <p class="text-gray-400 text-sm sm:text-base max-w-2xl mx-auto mb-10">Affordable packages designed for fast business growth</p>
+
+            <style>
+                /* Scoped pricing styles */
+                #pricing .pricing-grid{display:grid;grid-template-columns:1fr;gap:18px}
+                @media(min-width:768px){#pricing .pricing-grid{grid-template-columns:repeat(3,1fr)}}
+                #pricing .pricing-card{background:rgba(255,255,255,0.04);backdrop-filter:blur(8px);border-radius:18px;border:1px solid rgba(255,255,255,0.06);padding:22px 20px;display:flex;flex-direction:column;align-items:center;text-align:left;box-shadow:0 6px 20px rgba(0,0,0,0.45);min-height:420px;position:relative;overflow:visible}
+                #pricing .pricing-card .price-row{display:flex;flex-direction:column;align-items:center;gap:6px;margin:10px 0}
+                #pricing .pricing-card h3, #pricing .pricing-card p{text-align:center}
+                #pricing .price-original{color:#bcbcbc;text-decoration:line-through;font-weight:600}
+                #pricing .price-offer{color:#fff;font-size:28px;font-weight:800}
+                #pricing .feature-list{color:#EAEAEA;list-style:none;padding:0;margin:0;display:block}
+                #pricing .feature-list li{display:flex;gap:10px;align-items:flex-start;padding:6px 0;font-size:14px}
+                #pricing .feature-list li .tick{width:18px;height:18px;flex:0 0 18px;border-radius:4px;display:inline-flex;align-items:center;justify-content:center;background:rgba(255,255,255,0.04);color:#7fffd4}
+                #pricing .pricing-cta{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 20px;border-radius:999px;color:white;font-weight:700;background:linear-gradient(90deg,#a855f7,#3b82f6);box-shadow:0 6px 20px rgba(59,130,246,0.12);border:none;cursor:pointer}
+                #pricing .pricing-cta:hover{filter:brightness(1.03);box-shadow:0 10px 30px rgba(59,130,246,0.18)}
+                #pricing .badge{display:inline-flex;padding:6px 10px;border-radius:999px;font-weight:700;font-size:12px;white-space:nowrap}
+                #pricing .badge.one-time{background:linear-gradient(90deg,#ff7a7a,#ff4d4d);color:white;box-shadow:0 6px 30px rgba(255,77,109,0.18)}
+                #pricing .badge.popular{background:linear-gradient(90deg,#ffd67a,#ffb86b);color:#111}
+                #pricing .badge.advanced{background:linear-gradient(90deg,#9ae6b4,#60a5fa);color:#022c22}
+                #pricing .starter-highlight{transform:translateY(0);transition:transform .28s ease,box-shadow .28s ease;}
+                @media(min-width:768px){#pricing .starter-highlight{box-shadow:0 12px 40px rgba(168,85,247,0.06);transform:scale(1.03);border:1px solid rgba(168,85,247,0.08)}}
+                #pricing .glow-border{position:absolute;inset:-2px;border-radius:20px;padding:2px;pointer-events:none;background:linear-gradient(90deg,rgba(168,85,247,0.06),rgba(59,130,246,0.06));filter:blur(12px);opacity:0.9}
+                @media(max-width:640px){#pricing .pricing-card{min-height:auto;padding:18px} #pricing .pricing-cta{width:100%}}
+            </style>
+
+            <div class="pricing-grid mt-6">
+                <!-- Starter -->
+                <article class="pricing-card starter-highlight flex-shrink-0">
+                    <div class="glow-border" aria-hidden="true"></div>
+                    <div class="w-full flex items-center justify-between mb-4">
+                        <div>
+                            <span class="badge one-time">🔥 ONE TIME OFFER</span>
+                        </div>
+                        <div class="text-xs text-gray-400 text-right">Best For First Time Clients</div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-white w-full">Starter Launch Pack</h3>
+                    <p class="text-gray-400 text-sm mt-2 mb-3">Perfect for small businesses starting their online presence.</p>
+
+                    <div class="price-row w-full">
+                        <div class="price-original">৳8,000</div>
+                        <div class="price-offer">৳3,999 <span class="text-sm font-medium">BDT</span></div>
+                    </div>
+
+                    <ul class="feature-list mt-4 mb-4">
+                        <li><span class="tick">✓</span>5 Custom Social Media Designs</li>
+                        <li><span class="tick">✓</span>2 Short Video Ads</li>
+                        <li><span class="tick">✓</span>Basic Brand Audit</li>
+                        <li><span class="tick">✓</span>1 Demo Landing Page</li>
+                        <li><span class="tick">✓</span>Design Based on Your Brand</li>
+                        <li><span class="tick">✓</span>Delivery in 3-5 Days</li>
+                    </ul>
+
+                    <p class="text-gray-400 text-sm mb-4 text-left">This package can be purchased <strong>ONLY ONCE</strong> per business.</p>
+
+                    <button class="pricing-cta w-full md:w-auto" onclick="openWhatsApp('Hello, I am interested in the Starter Launch Pack.')">Get Started</button>
+                </article>
+
+                <!-- Growth -->
+                <article class="pricing-card">
+                    <div class="w-full flex items-center justify-between mb-4">
+                        <div><span class="badge popular">POPULAR</span></div>
+                        <div class="text-xs text-gray-400 text-right">Growth Automation</div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-white w-full">Growth Automation Pack</h3>
+                    <p class="text-gray-400 text-sm mt-2 mb-3">Best for businesses that want growth with automation.</p>
+
+                    <div class="price-row w-full">
+                        <div class="price-original">৳15,000</div>
+                        <div class="price-offer">৳9,999 <span class="text-sm font-medium">BDT</span></div>
+                    </div>
+
+                    <ul class="feature-list mt-4 mb-4">
+                        <li><span class="tick">✓</span>Everything in Starter Pack</li>
+                        <li><span class="tick">✓</span>Email Automation Setup</li>
+                        <li><span class="tick">✓</span>Simple Chatbot Setup</li>
+                        <li><span class="tick">✓</span>Google Sheets Analytics Dashboard</li>
+                        <li><span class="tick">✓</span>Monthly Performance Report</li>
+                        <li><span class="tick">✓</span>30 Minute Consultation Call</li>
+                    </ul>
+
+                    <button class="pricing-cta w-full md:w-auto" onclick="openWhatsApp('Hello, I am interested in the Growth Automation Pack.')">Get Started</button>
+                </article>
+
+                <!-- Pro -->
+                <article class="pricing-card">
+                    <div class="w-full flex items-center justify-between mb-4">
+                        <div><span class="badge advanced">ADVANCED</span></div>
+                        <div class="text-xs text-gray-400 text-right">Premium Business</div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-white w-full">Premium Business System</h3>
+                    <p class="text-gray-400 text-sm mt-2 mb-3">Complete digital system for serious business growth.</p>
+
+                    <div class="price-row w-full">
+                        <div class="price-original">৳25,000</div>
+                        <div class="price-offer">৳16,999 <span class="text-sm font-medium">BDT</span></div>
+                    </div>
+
+                    <ul class="feature-list mt-4 mb-4">
+                        <li><span class="tick">✓</span>Everything in Growth Pack</li>
+                        <li><span class="tick">✓</span>Advanced Automation Setup</li>
+                        <li><span class="tick">✓</span>Smart Chatbot System</li>
+                        <li><span class="tick">✓</span>Advanced Analytics Dashboard</li>
+                        <li><span class="tick">✓</span>Marketing Strategy Plan</li>
+                        <li><span class="tick">✓</span>Priority Support</li>
+                    </ul>
+
+                    <button class="pricing-cta w-full md:w-auto" onclick="openWhatsApp('Hello, I am interested in the Premium Business System.')">Get Started</button>
+                </article>
+            </div>
+
+            <script>
+                function openWhatsApp(msg){
+                    if(!msg) msg = 'Hello, I want to book the Nitrox Media package.';
+                    var url = 'https://wa.me/8801988786547?text=' + encodeURIComponent(msg);
+                    window.open(url,'_blank');
+                }
+            </script>
+        </div>
+    </section>
+
     <section id="faq" class="relative z-10 w-full py-16 sm:py-24">
         <div class="absolute inset-0 pointer-events-none z-0 overflow-hidden opacity-0">
         </div>
@@ -2383,6 +2509,8 @@
             </div>
         </div>
     </section>
+
+    
 
     <!-- ============ SECTION 13: FOOTER ============ -->
     <footer id="footer" class="relative z-10 w-full py-16 sm:py-20">
